@@ -1,31 +1,18 @@
 <?php
-/**
-* This file is part of French (Formal Honorifics) phpBB Translation.
-* Copyright (C) 2010 phpBB.fr
+/** 
 *
-* This program is free software; you can redistribute it and/or modify
-* it under the terms of the GNU General Public License as published by
-* the Free Software Foundation; version 2 of the License.
+* help_bbcode [Standard french]
+* translated originally by PhpBB-fr.com <http://www.phpbb-fr.com/> and phpBB.biz <http://www.phpBB.biz>
 *
-* This program is distributed in the hope that it will be useful,
-* but WITHOUT ANY WARRANTY; without even the implied warranty of
-* MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
-* GNU General Public License for more details.
+* @package language
+* @version $Id$
+* @copyright (c) 2005 phpBB Group 
+* @license http://opensource.org/licenses/gpl-license.php GNU Public License 
 *
-* You should have received a copy of the GNU General Public License along
-* with this program; if not, write to the Free Software Foundation, Inc.,
-* 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
-*
-* help_bbcode [French (Formal Honorifics)]
-*
-* @package   language
-* @author    Maël Soucaze <maelsoucaze@phpbb.fr> (Maël Soucaze) http://www.phpbb.fr/
-* @copyright 2005 phpBB Group
-* @license   http://www.gnu.org/licenses/gpl-2.0.txt GNU General Public License
-* @version   $Id: help_bbcode.php 9623 2009-06-18 18:12:28Z nickvergessen $
 */
 
 /**
+* DO NOT CHANGE
 */
 if (!defined('IN_PHPBB'))
 {
@@ -50,48 +37,48 @@ $help = array(
 		1 => 'Introduction'
 	),
 	array(
-		0 => 'Qu’est-ce que le BBCode ?',
-		1 => 'Le BBCode est une implémentation spéciale de l’HTML. S’il a été autorisé par l’administrateur, vous pouvez l’insérer dans vos messages sur le forum. De plus, vous pouvez désactiver le BBCode sur chacun de vos messages par l’intermédiaire du formulaire de rédaction. Le BBCode est similaire à l’architecture de l’HTML, les balises sont contenues entre des crochets <strong>[</strong> et <strong>]</strong> à la place de <strong>&lt;</strong> et <strong>&gt;</strong>, et il offre un meilleur contrôle sur la mise en forme. Selon le template que vous utilisez, vous pouvez trouver et ajouter très facilement du BBCode dans vos messages par l’intermédiaire d’une interface cliquable située juste au-dessus du formulaire de rédaction. Si ces brèves explications ne vous conviennent pas, vous pouvez consulter le guide suivant qui s’avère très explicite.'
+		0 => 'Qu’est-ce que le BBCode?',
+		1 => 'Le BBCode est une implémentation spéciale du HTML. L’administrateur détermine si le BBCode peut être utilisé dans vos messages sur le forum. Vous pouvez désactiver le BBCode dans certains messages via le formulaire de rédaction de message. Le BBCode ressemble au HTML, les balises sont entre crochets [ et ] au lieu de &lt; et &gt;, et offre une meilleure maîtrise de l’affichage du contenu. Selon le thème utilisé, vous pouvez également ajouter les BBCodes en cliquant dans l’interface au-dessus du formulaire de rédaction de message. Même avec cela, ce guide peut vous être utile.'
 	),
 	array(
 		0 => '--',
 		1 => 'Mise en forme du texte'
 	),
 	array(
-		0 => 'Comment puis-je mettre du texte en gras, en italique et en souligné ?',
-		1 => 'Le BBCode inclut des balises qui vous permettent de modifier rapidement le style de votre texte brut. Cela est réalisé grâce aux méthodes suivantes :<ul><li>Pour mettre une partie d’un texte en gras, il faut l’enfermer entre les balises <strong>[b][/b]</strong>. Par exemple :<br /><br /><strong>[b]</strong>Bonjour<strong>[/b]</strong><br /><br />Deviendra : <strong>Bonjour</strong></li><br /><li>Pour souligner une partie d’un texte, utilisez les balises <strong>[u][/u]</strong>. Par exemple :<br /><br /><strong>[u]</strong>Bon appétit !<strong>[/u]</strong><br /><br />Deviendra : <span style="text-decoration: underline">Bon appétit !</span></li><br /><li>Pour mettre une partie d’un texte en italique, utilisez les balises <strong>[i][/i]</strong>. Par exemple :<br /><br />C’est <strong>[i]</strong>excellent !<strong>[/i]</strong><br /><br />Deviendra : C’est <i>excellent !</i></li></ul>'
+		0 => 'Comment utiliser le gras, l’italique et le souligné',
+		1 => 'Le BBCode permet de modifier rapidement la forme du texte grâce aux méthodes suivantes:<ul><li>Encadrez le texte entre <strong>[b][/b]</strong> pour mettre en gras, exemple:<br /><br /><strong>[b]</strong>Salut<strong>[/b]</strong><br /><br />devient <strong>Salut</strong></li><li>Utilisez <strong>[u][/u]</strong> pour souligner, exemple:<br /><br /><strong>[u]</strong>Bonjour<strong>[/u]</strong><br /><br />devient <span style="text-decoration: underline">Bonjour</span></li><li>Utilisez <strong>[i][/i]</strong> pour l’italique, exemple:<br /><br />C’est <strong>[i]</strong>génial!<strong>[/i]</strong><br /><br />donne C’est <em>génial!</em></li></ul>'
 	),
 	array(
-		0 => 'Comment puis-je modifier la taille ou la couleur du texte ?',
-		1 => 'Pour modifier la taille ou la couleur du texte, les balises qui vont suivre pourront être utilisées. Gardez cependant à l’esprit que le rendu visuel final dépendra du navigateur et du système de l’utilisateur :<br /><br /><ul><li>Pour insérer une couleur sur une partie d’un texte, il faut l’enfermer entre les balises <strong>[color=][/color]</strong>. Vous pouvez saisir le nom d’une couleur reconnue, comme par exemple red, blue ou yellow, ou saisir directement son code hexadécimal, comme #FFFFFF ou #000000. Par exemple, pour mettre une partie d’un texte en rouge, vous pouvez utiliser :<br /><br /><strong>[color=red]</strong>Bonsoir !<strong>[/color]</strong><br /><br />Ou encore :<br /><br /><strong>[color=#FF0000]</strong>Bonsoir !<strong>[/color]</strong><br /><br />Ce qui, dans les deux cas, deviendra : <span style="color:red">Bonsoir !</span></li><br /><li>Pour modifier la taille de la police d’une partie d’un texte, utilisez les balises <strong>[size=][/size]</strong>. Ces balises dépendent du style que l’utilisateur a sélectionné, mais le format recommandé est une valeur numérique représentant la taille du texte en pourcentage, commençant de 50 (minuscule) et allant jusqu’à 200 (énorme). Par exemple :<br /><br /><strong>[size=50]</strong>MINUSCULE<strong>[/size]</strong><br /><br />Deviendra : <span style="font-size:50%;">MINUSCULE</span><br /><br />Alors que :<br /><br /><strong>[size=200]</strong>ÉNORME<strong>[/size]</strong><br /><br />Deviendra : <span style="font-size:200%;">ÉNORME</span></li></ul>'
+		0 => 'Changer la couleur et la taille du texte',
+		1 => 'Pour modifier la couleur ou la taille de votre texte, vous pouvez utiliser les balises suivantes. Gardez à l’esprit que la façon dont votre message s’affichera dépendra du navigateur et du système:<ul><li>Vous pouvez changer la couleur d’un texte en l’encadrant entre les balises <strong>[color=][/color]</strong>. Vous pouvez indiquer un nom de couleur connu (comme: red, blue, yellow, etc.) ou bien indiquer un code hexadécimal, c.-à-d. #FFFFFF, #000000. Par exemple, pour du texte rouge:<br /><br /><strong>[color=red]</strong>Salut!<strong>[/color]</strong><br /><br />ou<br /><br /><strong>[color=#FF0000]</strong>Salut!<strong>[/color]</strong><br /><br />afficheront tous les deux <span style="color:red">Salut!</span></li><li>Vous pouvez changer la taille du texte de façon analogue avec les balises <strong>[size=][/size]</strong>. Cette balise dépend du thème utilisé mais le format recommandé est une valeur numérique représentant la hauteur du texte en pourcentage, à partir de 20 (tellement petit que vous ne pourrez pas le voir) jusqu’à 200 (très grand). Par exemple:<br /><br /><strong>[size=30]</strong>PETIT<strong>[/size]</strong><br /><br />sera affiché <span style="font-size:30%;">PETIT</span><br /><br />alors que<br /><br /><strong>[size=200]</strong>ENORME!<strong>[/size]</strong><br /><br />donnera <span style="font-size:200%;">ENORME!</span></li></ul>'
 	),
 	array(
-		0 => 'Puis-je combiner des balises de mise en forme ?',
-		1 => 'Bien sûr ! Par exemple, afin d’obtenir l’attention de tout le monde, vous pouvez écrire :<br /><br /><strong>[size=150][color=red][b]</strong>REGARDEZ MOI !<strong>[/b][/color][/size]</strong><br /><br />Ce qui deviendra : <span style="color:red;font-size:250%;"><strong>REGARDEZ MOI !</strong></span><br /><br />Cependant, nous vous déconseillons fortement d’utiliser fréquemment ce genre de mise en forme ! Gardez à l’esprit qu’il faut simplement fermer les balises correctement et dans le bon ordre. Par exemple, ce qui suit est incorrect :<br /><br /><strong>[b][u]</strong>C’est incorrect !<strong>[/b][/u]</strong>'
-	),
-	array(
-		0 => '--',
-		1 => 'Citation et données de largeur fixe'
-	),
-	array(
-		0 => 'Citation de texte dans les réponses',
-		1 => 'Il y a deux manières de citer un texte, avec ou sans référence :<br /><br /><ul><li>Lorsque vous utilisez la fonction de citation afin de répondre à un message sur le forum, vous devriez noter que le texte qui est ajouté à la fenêtre du message est inséré entre les balises <strong>[quote=&quot;&quot;][/quote]</strong>. Cette méthode vous permet de citer, comme référence, une personne ou autre chose que vous choisissez de commenter ! Par exemple, afin de citer une partie d’un texte rédigé par M. Blobby, vous devez saisir :<br /><br /><strong>[quote=&quot;M. Blobby&quot;]</strong>Le texte que M. Blobby a rédigé est ici<strong>[/quote]</strong><br /><br />Le rendu final, “M. Blobby a écrit :”, sera ajouté automatiquement avant le texte actuel. Gardez à l’esprit que vous devez <strong>obligatoirement</strong> insérer les guillemets de citation &quot;&quot; autour du nom que vous citez.</li><br /><li>La deuxième méthode vous permet de citer aveuglément quelque chose. Pour l’utiliser, enfermez le texte entre les balises <strong>[quote][/quote]</strong>. Lorsque vous consulterez le message ultérieurement, il affichera simplement le texte dans un bloc de citation, et cela sans référence.</li></ul>'
-	),
-	array(
-		0 => 'Mise en forme de codes ou de données de largeur fixe',
-		1 => 'Si vous souhaitez insérer un fragment de code ou quelque chose qui demande une largeur fixe, comme le type de police Courier, vous devez enfermer le texte entre les balises <strong>[code][/code]</strong>. Par exemple :<br /><br /><strong>[code]</strong>echo &quot;Ceci est un fragment de code&quot;;<strong>[/code]</strong><br /><br />Toutes les balises de mise en forme présentes entre les balises <strong>[code][/code]</strong> sont conservées telles quelles lorsque vous consulterez le message ultérieurement. La syntaxe PHP peut être mise en évidence en utilisant les balises <strong>[code=php][/code]</strong> et il est recommandé de publier de réels fragments de code PHP afin d’en améliorer la lisibilité.'
+		0 => 'Puis-je combiner des balises?',
+		1 => 'Oui, bien évidemment, vous pouvez écrire pour attirer l’attention:<br /><br /><strong>[size=200][color=red][b]</strong>REGARDEZ-MOI!<strong>[/b][/color][/size]</strong><br /><br />ce qui donne <span style="color:red;font-size:200%;"><strong>REGARDEZ-MOI!</strong></span><br /><br />Attention toutefois à ne pas en abuser! Retenez aussi que c’est à vous, l’auteur, de vous assurer que les balises sont correctement fermées. Par exemple, ceci est incorrect:<br /><br /><strong>[b][u]</strong>C’est faux!<strong>[/b][/u]</strong>'
 	),
 	array(
 		0 => '--',
-		1 => 'Insertion de listes'
+		1 => 'Citations et textes à espacement fixe'
 	),
 	array(
-		0 => 'Création d’une liste non-ordonnée',
-		1 => 'Le BBCode supporte deux types de liste, la liste ordonnée et la liste non-ordonnée. Elles sont pratiquement identiques par rapport à leur équivalent en HTML. Une liste non-ordonnée publie chaque article l’un après l’autre, en utilisant le caractère étoile. Pour créer une liste non-ordonnée, vous devez utiliser les balises <strong>[list][/list]</strong> et définir chaque article dans la liste en utilisant les balises <strong>[*][/*]</strong>. Par exemple, afin de lister vos couleurs favorites, vous pouvez utiliser :<br /><br /><strong>[list]</strong><br /><strong>[*]</strong>Rouge<strong>[/*]</strong><br /><strong>[*]</strong>Bleu<strong>[/*]</strong><br /><strong>[*]</strong>Jaune<strong>[/*]</strong><br /><strong>[/list]</strong><br /><br />Ce qui deviendra :<ul><li>Rouge</li><li>Bleu</li><li>Jaune</li></ul>'
+		0 => 'Citer du texte dans les réponses',
+		1 => 'Il y a deux manières de citer un texte, avec ou sans référence.<ul><li>Lorsque vous utilisez la fonction de citation pour répondre à un message sur le forum, vous pouvez noter que le texte du message est ajouté à l’intérieur d’un bloc <strong>[quote=&quot;&quot;][/quote]</strong>. Cette méthode vous permet de citer avec une référence à une personne ou toute autre référence! Par exemple, pour citer un texte de M. Goutte, vous mettrez:<br /><br /><strong>[quote=&quot;M. Goutte&quot;]</strong>Le texte de M. Goutte ira ici<strong>[/quote]</strong><br /><br /><em>M. Goutte a écrit:</em> sera ajouté automatiquement avant le texte. Souvenez-vous que vous <strong>devez</strong> encadrer entre &quot;&quot; le nom à citer, ce n’est pas optionnel.</li><li>La deuxième méthode vous permet de faire des citations en aveugle. Pour l’utiliser, encadrez le texte avec les balises <strong>[quote][/quote]</strong>. Lorsque vous consulterez le message, cela affichera, en fonction du thème utilisé, <em>Citation:</em> avant le texte lui-même.</li></ul>'
+	),
+	array(
+		0 => 'Afficher du code ou des données à espacement fixe',
+		1 => 'Si vous désirez insérer du code ou quoi que ce soit qui nécessite une police à largeur fixe, par exemple: une police de type Courier, encadrez votre texte entre les balises <strong>[code][/code]</strong>:<br /><br /><strong>[code]</strong>echo &quot;Un peu de code&quot;;<strong>[/code]</strong><br /><br />Le format utilisé entre les balises <strong>[code][/code]</strong> est enregistré pour une consultation ultérieure. La syntaxe PHP peut être mise en valeur en utilisant <strong>[code=php][/code]</strong> et c’est recommandé lorsque des extraits de code PHP sont publiés afin d’en améliorer la lisibilité.'
+	),
+	array(
+		0 => '--',
+		1 => 'Génération de listes'
+	),
+	array(
+		0 => 'Création d’une liste non ordonnée',
+		1 => 'Le BBCode gère deux types de listes: ordonnées ou non. Elles sont les mêmes que leur équivalent HTML. Une liste non ordonnée affiche chaque élément de la liste séquentiellement l’un après l’autre, chacun indenté par une puce. Utilisez <strong>[list][/list]</strong> pour créer une liste non ordonnée et définissez chaque élément avec <strong>[*]</strong>. Par exemple, pour la liste de vos couleurs préférées, utilisez:<br /><br /><strong>[list]</strong><br /><strong>[*]</strong>Rouge<br /><strong>[*]</strong>Bleu<br /><strong>[*]</strong>Jaune<br /><strong>[/list]</strong><br /><br />Ce qui générera la liste suivante:<ul><li>Rouge</li><li>Bleu</li><li>Jaune</li></ul>'
 	),
 	array(
 		0 => 'Création d’une liste ordonnée',
-		1 => 'Le second type de liste, la liste ordonnée, vous donne le contrôle sur ce qui est affiché devant chaque article. Vous devez utiliser les balises <strong>[list=1][/list]</strong> afin de créer une liste numérotée, ou bien encore les balises <strong>[list=a][/list]</strong> afin de créer une liste alphabétique. Comme pour la liste non-ordonnée, les articles doivent être définis en utilisant la balise <strong>[*]</strong>. Par exemple :<br /><br /><strong>[list=1]</strong><br /><strong>[*]</strong>Faire les boutiques<strong>[/*]</strong><br /><strong>[*]</strong>Acheter un nouvel ordinateur<strong>[/*]</strong><br /><strong>[*]</strong>Insulter l’ordinateur quand il est bloqué<strong>[/*]</strong><br /><strong>[/list]</strong><br /><br />Deviendra :<ol style="list-style-type: decimal;"><li>Faire les boutiques</li><li>Acheter un nouvel ordinateur</li><li>Insulter l’ordinateur quand il est bloqué</li></ol>Pour créer une liste alphabétique, vous devez utiliser :<br /><br /><strong>[list=a]</strong><br /><strong>[*]</strong>La première réponse possible<strong>[/*]</strong><br /><strong>[*]</strong>La seconde réponse possible<strong>[/*]</strong><br /><strong>[*]</strong>La troisième réponse possible<strong>[/*]</strong><br /><strong>[/list]</strong><br /><br />Ce qui deviendra :<ol style="list-style-type: lower-alpha"><li>La première réponse possible</li><li>La seconde réponse possible</li><li>La troisième réponse possible</li></ol>'
+		1 => 'Le deuxième type de liste, la liste ordonnée, vous permet de décider de ce qui s’affiche avant chaque élément. Utilisez <strong>[list=1][/list]</strong> pour créer une liste ordonnée numérotée ou <strong>[list=a][/list]</strong> pour une liste alphabétique. Comme pour les listes non ordonnées, les éléments sont indiqués avec <strong>[*]</strong>. Par exemple:<br /><br /><strong>[list=1]</strong><br /><strong>[*]</strong>Faire les courses<br /><strong>[*]</strong>Acheter un nouvel ordinateur<br /><strong>[*]</strong>Jurer quand le PC plante<br /><strong>[/list]</strong><br /><br />affichera<ol style="list-style-type: arabic-numbers"><li>Faire les courses</li><li>Acheter un nouvel ordinateur</li><li>Jurer quand le PC plante</li></ol>Alors que pour une liste alphabétique, vous utiliserez:<br /><br /><strong>[list=a]</strong><br /><strong>[*]</strong>Réponse 1<br /><strong>[*]</strong>Réponse 2<br /><strong>[*]</strong>Réponse 3<br /><strong>[/list]</strong><br /><br />et vous obtiendrez<ol style="list-style-type: lower-alpha"><li>Réponse 1</li><li>Réponse 2</li><li>Réponse 3</li></ol>'
 	),
 	// This block will switch the FAQ-Questions to the second template column
 	array(
@@ -103,28 +90,28 @@ $help = array(
 		1 => 'Création de liens'
 	),
 	array(
-		0 => 'Insérer un lien vers un site quelconque',
-		1 => 'Le BBCode de phpBB propose un certain nombre de manières de créer des URI (Uniform Resource Indicators), plus connues sous le nom d’URL.<br /><br /><ul><li>La première de celles-ci emploie la balise <strong>[url=][/url]</strong> et ce qui est inséré après le signe = fait agir le contenu de cette balise en tant que lien. Par exemple, afin d’insérer un lien vers phpBB.fr, vous devez utiliser :<br /><br /><strong>[url=http://www.phpbb.fr/]</strong>Visitez phpBB.fr !<strong>[/url]</strong><br /><br />Cela génèrera le lien suivant : <a href="http://www.phpbb.fr/">Visitez phpBB.fr !</a>. Veuillez noter que selon les réglages du navigateur des utilisateurs, le lien peut s’ouvrir dans la même fenêtre ou dans une nouvelle fenêtre.</li><br /><li>Si vous souhaitez que le lien soit affiché comme un lien basique, vous pouvez employer simplement ceci :<br /><br /><strong>[url]</strong>http://www.phpbb.fr/<strong>[/url]</strong><br /><br />Cela générera le lien suivant : <a href="http://www.phpbb.fr/">http://www.phpbb.fr/</a></li><br /><li>De plus, les fonctionnalités de phpBB permettent d’insérer une fonctionnalité appelée les <i>liens magiques</i>. Cela transformera n’importe quel lien en lien syntaxiquement correct, sans que vous n’ayez besoin de l’indiquer devant toutes les balises ou même encore d’ajouter http://. Par exemple, en écrivant www.phpbb.fr dans votre message, cela se complètera automatiquement en <a href="http://www.phpbb.fr/">www.phpbb.fr</a> lorsque vous verrez votre message par la suite.</li><br /><li>La même chose est valable pour les adresses e-mails, vous pouvez indiquer sur l’un ou sur l’autre une adresse explicite, par exemple :<br /><br /><strong>[email]</strong>inconnu@domaine.adr<strong>[/email]</strong><br /><br />Générera : <a href="mailto:inconnu@domaine.adr">inconnu@domaine.adr</a>, ou vous pouvez simplement écrire inconnu@domaine.adr dans votre message et celui-ci sera automatiquement complété lors de la visualisation.</li></ul>Comme avec toutes les balises BBCode, vous pouvez insérer des liens autour d’autres balises comme <strong>[img][/img]</strong> (voir la prochaine question), <strong>[b][/b]</strong>, etc. Comme pour les balises de mise en forme, il vous appartient d’en assurer l’usage correct d’ouverture et de fermeture des balises, et cela dans le bon ordre. Par exemple :<br /><br /><strong>[url=http://www.google.fr/][img]</strong>http://www.google.fr/intl/fr_fr/images/logo.gif<strong>[/url][/img]</strong><br /><br />N’est <span style="text-decoration: underline">pas</span> correct, ce qui peut mener à la suppression de votre message.'
+		0 => 'Liens vers un autre site',
+		1 => 'Le BBCode permet de créer des URI (Indicateurs de Ressources Uniformes) ou URL de différentes façons.<ul><li>La première est d’utiliser les balises <strong>[url=][/url]</strong>, ce que vous taperez après le signe = se comportera comme une URL. Par exemple, pour un lien vers phpBB-fr.com, vous pouvez utiliser:<br /><br /><strong>[url=http://forums.phpbb-fr.com/]</strong>Visitez phpBB!<strong>[/url]</strong><br /><br />Ce qui générera le lien, <a href="http://forums.phpbb-fr.com/">Visitez phpBB!</a> Vous noterez que le lien s’ouvre soit dans la même fenêtre, soit dans une nouvelle fenêtre selon les préférences du navigateur.</li> <li>Si vous désirez que l’URL elle-même soit affichée comme un lien, vous pouvez simplement utiliser:<br /><br /><strong>[url]</strong>http://forums.phpbb-fr.com/<strong>[/url]</strong><br /><br />Ce qui générera le lien, <a href="http://forums.phpbb-fr.com/">http://forums.phpbb-fr.com/</a></li><li>De plus, phpBB autorise les <em>Liens Magiques</em>, ce qui transforme automatiquement les URL correctement écrites en lien sans indiquer de balise ou même http://. Par exemple, si vous tapez forums.phpbb-fr.com, un lien <a href="http://forums.phpbb-fr.com/">forums.phpbb-fr.com</a> sera affiché automatiquement à la lecture de votre message.</li><li>La même chose s’applique aux adresses e-mails, vous pouvez indiquer l’adresse explicitement, comme par exemple:<br /><br /><strong>[email]</strong>personne@domain.adr<strong>[/email]</strong><br /><br />ce qui affichera <a href="mailto:personne@domain.adr">personne@domain.adr</a> ou bien vous pouvez simplement taper personne@domain.adr dans votre message et cela sera automatiquement converti lors de la consultation.</li></ul>Comme avec toutes les balises BBCode, vous pouvez encapsuler avec des URL d’autres balises telles que <strong>[img][/img]</strong> (voir l’entrée suivante), <strong>[b][/b]</strong>, etc. Comme avec les balises de mise en forme, c’est à vous de vous assurer de les ouvrir et de les fermer correctement, par exemple:<br /><br /><strong>[url=http://forums.phpbb-fr.com/][img]</strong>http://forums.phpbb-fr.com/images/phplogo.gif<strong>[/url][/img]</strong><br /><br />n’est <span style="text-decoration: underline">pas</span> correct ce qui peut entraîner la suppression de votre message, donc faites attention.'
 	),
 	array(
 		0 => '--',
-		1 => 'Visualisation d’images dans les messages'
+		1 => 'Afficher des images dans les messages'
 	),
 	array(
 		0 => 'Ajout d’une image dans un message',
-		1 => 'Le BBCode de phpBB intègre une balise afin d’insérer des images dans vos messages. Les deux choses très importantes à garder à l’esprit lors de l’utilisation des balises d’images sont que beaucoup d’utilisateurs n’apprécient pas un excès d’images dans les messages et que l’image que vous souhaitez afficher doit être déjà disponible sur Internet (elle ne peut pas exister seulement sur votre ordinateur, à moins que vous travailliez directement depuis un serveur Internet !). Pour afficher une image, vous devez renseigner le lien se dirigeant directement vers l’image avec les balises <strong>[img][/img]</strong>. Par exemple :<br /><br /><strong>[img]</strong>http://www.google.fr/intl/fr_fr/images/logo.gif<strong>[/img]</strong><br /><br />Comme noté dans la section des liens ci-dessus, vous pouvez intégrer une image entre des balises <strong>[url][/url]</strong>. Par exemple :<br /><br /><strong>[url=http://www.google.fr/][img]</strong>http://www.google.fr/intl/fr_fr/images/logo.gif<strong>[/img][/url]</strong><br /><br />Deviendra :<br /><br /><a href="http://www.google.fr/"><img src="http://www.google.fr/intl/fr_fr/images/logo.gif" alt="" /></a>'
+		1 => 'Le BBCode permet d’inclure des images dans vos messages à l’aide d’une balise. Il y a deux choses importantes à se rappeler lors de l’utilisation de cette balise qui sont d’une part, que beaucoup d’utilisateurs n’apprécient pas qu’il y ait beaucoup d’images dans les messages et d’autre part, que l’image affichée doit être disponible sur Internet (elle ne peut être uniquement que sur votre ordinateur, sauf si vous avez un serveur Web!). Pour afficher une image, vous devez encadrer son URL entre des balises <strong>[img][/img]</strong>. Par exemple:<br /><br /><strong>[img]</strong>http://www.google.com/intl/en_ALL/images/logo.gif<strong>[/img]</strong><br /><br />Comme noté dans la section URL ci-dessus, vous pouvez entourer l’image entre des balises <strong>[url][/url]</strong> si désiré, exemple:<br /><br /><strong>[url=http://www.google.com/][img]</strong>http://www.google.com/intl/en_ALL/images/logo.gif<strong>[/img][/url]</strong><br /><br />affichera<br /><br /><a href="http://www.google.com/"><img src="http://www.google.com/intl/en_ALL/images/logo.gif" alt="" /></a>'
 	),
 	array(
-		0 => 'Ajout de pièces jointes dans un message',
-		1 => 'Des pièces jointes peuvent dès à présent être insérées dans les messages en employant le nouveau BBCode <strong>[attachment=][/attachment]</strong>, si cette fonction a été activée par l’administrateur du forum et si vous avez les permissions appropriées afin d’insérer des pièces jointes. Afin d’insérer des pièces jointes en ligne, un tableau est affiché en bas de l’écran de rédaction.'
+		0 => 'Joindre un fichier à un message',
+		1 => 'Les fichiers peuvent maintenant être joints à n’importe quel endroit du message en utilisant le BBcode <strong>[attachment=][/attachment]</strong>, si l’administrateur a activé cette fonctionnalité et si vous en avez la permission. Dans l’écran de rédaction de message, vous trouverez un menu déroulant (respectivement un bouton) pour joindre vos fichiers en ligne.'
 	),
 	array(
 		0 => '--',
-		1 => 'Divers'
+		1 => 'Autres questions'
 	),
 	array(
-		0 => 'Puis-je ajouter mes propres balises ?',
-		1 => 'Si vous êtes un administrateur de ce forum et que vous avez les permissions appropriées, vous pouvez ajouter davantage de BBCode dans la section “Personnaliser les BBCodes”.'
+		0 => 'Puis-je ajouter mes balises?',
+		1 => 'Si vous êtes administrateur du forum et avez les autorisations nécessaires, vous pouvez ajouter des BBcodes supplémentaires via la section &quot;BBcodes&quot; dans le sous menu &quot;Messages&quot;.'
 	)
 );
 

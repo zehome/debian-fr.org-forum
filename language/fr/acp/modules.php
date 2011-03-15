@@ -1,28 +1,14 @@
 <?php
 /**
-* This file is part of French (Formal Honorifics) phpBB Translation.
-* Copyright (C) 2010 phpBB.fr
 *
-* This program is free software; you can redistribute it and/or modify
-* it under the terms of the GNU General Public License as published by
-* the Free Software Foundation; version 2 of the License.
+* acp_modules [Standard french]
+* translated originally by PhpBB-fr.com <http://www.phpbb-fr.com/> and phpBB.biz <http://www.phpBB.biz>
 *
-* This program is distributed in the hope that it will be useful,
-* but WITHOUT ANY WARRANTY; without even the implied warranty of
-* MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
-* GNU General Public License for more details.
+* @package language
+* @version $Id$
+* @copyright (c) 2005 phpBB Group
+* @license http://opensource.org/licenses/gpl-license.php GNU Public License
 *
-* You should have received a copy of the GNU General Public License along
-* with this program; if not, write to the Free Software Foundation, Inc.,
-* 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
-*
-* acp_modules [French (Formal Honorifics)]
-*
-* @package   language
-* @author    Maël Soucaze <maelsoucaze@phpbb.fr> (Maël Soucaze) http://www.phpbb.fr/
-* @copyright 2005 phpBB Group
-* @license   http://www.gnu.org/licenses/gpl-2.0.txt GNU General Public License
-* @version   $Id: modules.php 8479 2008-03-29 00:22:48Z naderman $
 */
 
 /**
@@ -51,49 +37,49 @@ if (empty($lang) || !is_array($lang))
 // in a url you again do not need to specify an order e.g., 'Click %sHERE%s' is fine
 
 $lang = array_merge($lang, array(
-	'ACP_MODULE_MANAGEMENT_EXPLAIN'	=> 'Vous pouvez gérer ici l’ensemble des modules. Veuillez noter que le PCA détient une structure à trois niveaux de menu (Catégorie -> Catégorie -> Module) alors que les autres détiennent une structure à deux niveaux de menu (Catégorie -> Module), ce qui doit être conservé. Veuillez également prendre conscience que vous pouvez vous bloquer si vous désactivez ou supprimez les modules responsables de la gestion des modules.',
+	'ACP_MODULE_MANAGEMENT_EXPLAIN'	=> 'Vous pouvez gérer l’ensemble des modules. Notez bien que le panneau d’administration comporte 3 niveaux de menu (Catégorie -> Catégorie -> Module) alors que les autres ne comportent que 2 niveaux (Catégorie -> Module) qui doivent être conservés. Soyez également conscient que vous pouvez vous bloquer si vous désactivez ou supprimez les modules responsables de la gestion des modules eux-mêmes.',
 	'ADD_MODULE'					=> 'Ajouter un module',
-	'ADD_MODULE_CONFIRM'			=> 'Êtes-vous sûr de vouloir ajouter ce module avec le mode sélectionné ?',
+	'ADD_MODULE_CONFIRM'			=> 'Êtes-vous sûr de vouloir ajouter le module sélectionné avec le mode sélectionné?',
 	'ADD_MODULE_TITLE'				=> 'Ajouter un module',
 
-	'CANNOT_REMOVE_MODULE'	=> 'Impossible de supprimer le module, il possède des sous-modules. Veuillez supprimer ou déplacer tous les sous-modules avant d’effectuer cette opération.',
-	'CATEGORY'				=> 'Catégorie',
-	'CHOOSE_MODE'			=> 'Sélectionner le mode du module',
-	'CHOOSE_MODE_EXPLAIN'	=> 'Sélectionner les modes du module qui seront utilisés.',
-	'CHOOSE_MODULE'			=> 'Sélectionner un module',
-	'CHOOSE_MODULE_EXPLAIN'	=> 'Sélectionner le fichier qui sera utilisé par ce module.',
+	'CANNOT_REMOVE_MODULE'	=> 'Impossible de supprimer le module parent. Supprimez ou déplacer les modules enfants avant de tenter cette action.',
+	'CATEGORY'				=> 'Categorie',
+	'CHOOSE_MODE'			=> 'Choisissez un mode de module',
+	'CHOOSE_MODE_EXPLAIN'	=> 'Indiquez le mode qui doit être utilisé.',
+	'CHOOSE_MODULE'			=> 'Choisissez un module',
+	'CHOOSE_MODULE_EXPLAIN'	=> 'Indiquez le fichier appelé par ce module.',
 	'CREATE_MODULE'			=> 'Créer un nouveau module',
 
-	'DEACTIVATED_MODULE'	=> 'Module désactivé',
+	'DEACTIVATED_MODULE'	=> 'Désactiver le module',
 	'DELETE_MODULE'			=> 'Supprimer le module',
-	'DELETE_MODULE_CONFIRM'	=> 'Êtes-vous sûr de vouloir supprimer ce module ?',
+	'DELETE_MODULE_CONFIRM'	=> 'Êtes-vous sûr de vouloir supprimer ce module?',
 
-	'EDIT_MODULE'			=> 'Éditer le module',
-	'EDIT_MODULE_EXPLAIN'	=> 'Vous pouvez saisir ici les réglages spécifiques au module.',
+	'EDIT_MODULE'			=> 'Editer le module',
+	'EDIT_MODULE_EXPLAIN'	=> 'Vous pouvez entrer une configuration particulière au module.',
 
-	'HIDDEN_MODULE'			=> 'Module invisible',
+	'HIDDEN_MODULE'			=> 'Cacher le module',
 
 	'MODULE'					=> 'Module',
-	'MODULE_ADDED'				=> 'Le module a été ajouté avec succès.',
-	'MODULE_DELETED'			=> 'Le module a été supprimé avec succès.',
-	'MODULE_DISPLAYED'			=> 'Module affiché',
-	'MODULE_DISPLAYED_EXPLAIN'	=> 'Si vous ne souhaitez pas afficher ce module mais que vous souhaitez l’utiliser, réglez ceci sur <samp>Non</samp>.',
-	'MODULE_EDITED'				=> 'Le module a été édité avec succès.',
-	'MODULE_ENABLED'			=> 'Module activé',
-	'MODULE_LANGNAME'			=> 'Nom de la langue du module',
-	'MODULE_LANGNAME_EXPLAIN'	=> 'Saisissez le nom du module qui sera affiché. Utilisez une variable de langue si le nom est utilisé par le fichier de langue.',
+	'MODULE_ADDED'				=> 'Module ajouté.',
+	'MODULE_DELETED'			=> 'Module supprimé.',
+	'MODULE_DISPLAYED'			=> 'Afficher le module',
+	'MODULE_DISPLAYED_EXPLAIN'	=> 'Si vous ne souhaitez pas afficher ce module mais tout de même l’utiliser, mettez ceci à non.',
+	'MODULE_EDITED'				=> 'Module édité.',
+	'MODULE_ENABLED'			=> 'Activer le module',
+	'MODULE_LANGNAME'			=> 'Langue du module',
+	'MODULE_LANGNAME_EXPLAIN'	=> 'Entrez le nom du module qui sera affiché. Utilisez la variable de langue si elle est définie dans le fichier de langue.',
 	'MODULE_TYPE'				=> 'Type de module',
 
-	'NO_CATEGORY_TO_MODULE'	=> 'Impossible de modifier la catégorie en module. Veuillez supprimer ou déplacer tous les sous-modules avant d’effectuer cette opération.',
+	'NO_CATEGORY_TO_MODULE'	=> 'Impossible de convertir la catégorie en module. Supprimez ou déplacer les modules enfants avant de tenter cette action.',
 	'NO_MODULE'				=> 'Aucun module n’a été trouvé.',
-	'NO_MODULE_ID'			=> 'Aucune identification du module n’a été spécifiée.',
-	'NO_MODULE_LANGNAME'	=> 'Aucun nom de la langue du module n’a été spécifié.',
-	'NO_PARENT'				=> 'Aucun parent',
+	'NO_MODULE_ID'			=> 'Aucune identification du module n’a été indiquée.',
+	'NO_MODULE_LANGNAME'	=> 'Aucun nom de module n’a été indiqué.',
+	'NO_PARENT'				=> 'Aucun module parent',
 
-	'PARENT'				=> 'Parent',
-	'PARENT_NO_EXIST'		=> 'Le parent n’existe pas.',
+	'PARENT'				=> 'Module parent',
+	'PARENT_NO_EXIST'		=> 'Le module parent n’existe pas.',
 
-	'SELECT_MODULE'			=> 'Sélectionner un module',
+	'SELECT_MODULE'			=> 'Sélectionnez un module',
 ));
 
 ?>

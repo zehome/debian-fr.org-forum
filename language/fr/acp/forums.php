@@ -1,28 +1,14 @@
 <?php
-/**
-* This file is part of French (Formal Honorifics) phpBB Translation.
-* Copyright (C) 2010 phpBB.fr
+/** 
 *
-* This program is free software; you can redistribute it and/or modify
-* it under the terms of the GNU General Public License as published by
-* the Free Software Foundation; version 2 of the License.
+* acp_forums [Standard french]
+* translated originally by PhpBB-fr.com <http://www.phpbb-fr.com/> and phpBB.biz <http://www.phpBB.biz>
 *
-* This program is distributed in the hope that it will be useful,
-* but WITHOUT ANY WARRANTY; without even the implied warranty of
-* MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
-* GNU General Public License for more details.
+* @package language
+* @version $Id$
+* @copyright (c) 2005 phpBB Group 
+* @license http://opensource.org/licenses/gpl-license.php GNU Public License 
 *
-* You should have received a copy of the GNU General Public License along
-* with this program; if not, write to the Free Software Foundation, Inc.,
-* 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
-*
-* acp_forums [French (Formal Honorifics)]
-*
-* @package   language
-* @author    Maël Soucaze <maelsoucaze@phpbb.fr> (Maël Soucaze) http://www.phpbb.fr/
-* @copyright 2005 phpBB Group
-* @license   http://www.gnu.org/licenses/gpl-2.0.txt GNU General Public License
-* @version   $Id: forums.php 10514 2010-02-20 22:36:22Z Marshalrusty $
 */
 
 /**
@@ -52,127 +38,120 @@ if (empty($lang) || !is_array($lang))
 
 // Forum Admin
 $lang = array_merge($lang, array(
-  'ALLOW_SOLVE' => 'Allow topics to be marked as solved',
-  'ALLOW_SOLVE_EXPLAIN' => 'Give topic starters or moderators the ability to set a topic as solved. Moderators can solve topics in both yes-options.',
-  'ALLOW_UNSOLVE' => 'Allow topics to be reopened',
-  'ALLOW_UNSOLVE_EXPLAIN' => 'Give users or moderators the ability to set a topic back as not solved. Moderators can unsolve topics in both yes-options.',
-  'LOCK_SOLVED' => 'Lock solved topics',
-  'LOCK_SOLVED_EXPLAIN' => 'Note that only moderators can reopen locked topics.',
-  'TOPIC_SOLVED_SETTINGS' => 'Topic solved settings',
-  'FORUM_SOLVE_TEXT' => 'Choose text instead of solved-image',
-  'FORUM_SOLVE_TEXT_EXPLAIN' => 'You can have some text instead of the nice topic solved image. Ex [SOLVED] or [SOLD] or something else. Leave empty to use the topic solved image.',
-  'FORUM_SOLVE_COLOR' => 'Color for the text',
-  'FORUM_SOLVE_COLOR_EXPLAIN' => 'Choose a color for the text. Leave empty to use default color.',
-  'YES_MOD' => 'Yes, moderator',
-	'AUTO_PRUNE_DAYS'			=> 'Durée du délestage automatique',
-	'AUTO_PRUNE_DAYS_EXPLAIN'	=> 'Nombre de jours entre la publication du dernier message et la suppression du sujet.',
+	'LOCK_SOLVED' => 'Lock solved topics',
+	'LOCK_SOLVED_EXPLAIN' => 'Note that only moderators can reopen locked topics.',
+	'TOPIC_SOLVED_SETTINGS' => 'Topic solved settings',
+	'FORUM_SOLVE_TEXT_EXPLAIN' => 'You can have some text instead of the nice topic solved image. Ex [SOLVED] or [SOLD] or something else. Leave empty to use the topic solved image.',
+
+	'AUTO_PRUNE_DAYS'			=> 'Ancienneté des messages délestés automatiquement',
+	'AUTO_PRUNE_DAYS_EXPLAIN'	=> 'Nombre de jours depuis le dernier message et la suppression du sujet.',
 	'AUTO_PRUNE_FREQ'			=> 'Fréquence du délestage automatique',
-	'AUTO_PRUNE_FREQ_EXPLAIN'	=> 'Nombre de jours entre les délestages automatiques.',
-	'AUTO_PRUNE_VIEWED'			=> 'Durée du délestage automatique des message consultés',
-	'AUTO_PRUNE_VIEWED_EXPLAIN'	=> 'Nombre de jours entre la dernière consultation du sujet et sa suppression.',
+	'AUTO_PRUNE_FREQ_EXPLAIN'	=> 'Durée en jours entre les événements de délestage.',
+	'AUTO_PRUNE_VIEWED'			=> 'Ancienneté des messages vus délestés automatiquement',
+	'AUTO_PRUNE_VIEWED_EXPLAIN'	=> 'Nombre de jours depuis la dernière consultation et la suppression du sujet.',
 
 	'CONTINUE'						=> 'Continuer',
-  'COPY_PERMISSIONS'				=> 'Copier les permissions de',
-  'COPY_PERMISSIONS_EXPLAIN'		=> 'Pour faciliter la configuration des permissions de votre nouveau forum, vous pouvez copier les permissions d’un forum déjà existant.',
-	'COPY_PERMISSIONS_ADD_EXPLAIN'	=> 'Une fois créé, le forum détiendra les mêmes permissions que celles que vous avez sélectionné ici. Si aucun forum n’est sélectionné, le forum créé ne sera pas visible car il ne détiendra aucune permission.',
-	'COPY_PERMISSIONS_EDIT_EXPLAIN'	=> 'Si vous copiez les permissions, le forum détiendra les mêmes permissions que celles que vous avez sélectionné ici. Cela écrasera toutes les permissions antérieures du forum. Si aucun forum n’est sélectionné, les permissions actuelles seront conservées.',
-	'COPY_TO_ACL'					=> 'Vous pouvez également %sconfigurer les nouvelles permissions%s de ce forum.',
+	
+	'COPY_PERMISSIONS'				=> 'Copier les permissions depuis',
+	'COPY_PERMISSIONS_EXPLAIN'		=> 'Pour faciliter la mise en place des permissions pour votre nouveau forum, vous pouvez copier les permissions d’un forum existant.',
+	'COPY_PERMISSIONS_ADD_EXPLAIN'	=> 'Une fois créé, le forum aura les mêmes permissions que celles sélectionnées ici. Si aucun forum n’est choisi, le nouveau forum ne sera pas visible tant que ses permissions n’ont pas été définies.',
+	'COPY_PERMISSIONS_EDIT_EXPLAIN'	=> 'Si vous choisissez de copier les permissions, le forum aura les mêmes permissions que celles sélectionnées ici. Elles remplaceront toutes les permissions précédemment définies pour ce forum, par les permissions du forum sélectionné. Si aucun forum n’est choisi les permissions actuelles seront conservées.',
+	'COPY_TO_ACL'					=> 'Autrement, vous êtes aussi capable de %srégler de nouvelles permissions%s pour ce forum.',
 	'CREATE_FORUM'					=> 'Créer un nouveau forum',
 
-	'DECIDE_MOVE_DELETE_CONTENT'		=> 'Supprimer le contenu ou le déplacer vers le forum',
-	'DECIDE_MOVE_DELETE_SUBFORUMS'		=> 'Supprimer les sous-forums ou les déplacer vers le forum',
+	'DECIDE_MOVE_DELETE_CONTENT'		=> 'Supprimer ou déplacer le contenu vers un forum',
+	'DECIDE_MOVE_DELETE_SUBFORUMS'		=> 'Supprimer ou déplacer les sous-forums vers un forum',
 	'DEFAULT_STYLE'						=> 'Style par défaut',
 	'DELETE_ALL_POSTS'					=> 'Supprimer les messages',
 	'DELETE_SUBFORUMS'					=> 'Supprimer les sous-forums et les messages',
 	'DISPLAY_ACTIVE_TOPICS'				=> 'Activer les sujets actifs',
-	'DISPLAY_ACTIVE_TOPICS_EXPLAIN'		=> 'Si réglé sur <samp>Oui</samp>, les sujets actifs du sous-forum sélectionné seront affichés dans cette catégorie.',
+	'DISPLAY_ACTIVE_TOPICS_EXPLAIN'		=> 'Si activé, les sujets actifs des sous-forums choisis seront affichés dans cette catégorie.',
 
-	'EDIT_FORUM'					=> 'Éditer le forum',
-	'ENABLE_INDEXING'				=> 'Activer lindexation de la recherche',
-	'ENABLE_INDEXING_EXPLAIN'		=> 'Si réglé sur <samp>Oui</samp>, les messages publiés dans ce forum seront indexés lors de la recherche.',
-	'ENABLE_POST_REVIEW'			=> 'Activer la revue des messages',
-	'ENABLE_POST_REVIEW_EXPLAIN'	=> 'Si réglé sur <samp>Oui</samp>, les utilisateurs pourront revoir leur message en éditant celui-ci alors que des réponses ont été publiées. Il est conseillé de ne pas activer cela sur les forums de discussions.',
+	'EDIT_FORUM'					=> 'Editer un forum',
+	'ENABLE_INDEXING'				=> 'Activer l’indexation de recherche',
+	'ENABLE_INDEXING_EXPLAIN'		=> 'Si activé, les messages du forum seront indexés pour la recherche.',
+	'ENABLE_POST_REVIEW'			=> 'Activer la révision des messages',
+	'ENABLE_POST_REVIEW_EXPLAIN'	=> 'Si activé, les utilisateurs seront avertis si de nouveaux messages ont été postés dans le sujet pendant qu’ils rédigeaient le leur. Ceci devrait être désactivé sur les forums de chat.',
 	'ENABLE_QUICK_REPLY'			=> 'Activer la réponse rapide',
-	'ENABLE_QUICK_REPLY_EXPLAIN'	=> 'Active la réponse rapide dans ce forum. Ce réglage n’est pas pris en compte si la réponse rapide a été désactivée sur tout le forum. La réponse rapide ne sera affichée qu’aux utilisateurs ayant la permission de publier dans ce forum.',
+	'ENABLE_QUICK_REPLY_EXPLAIN'	=> 'Active la réponse rapide dans ce forum. Ce paramètre est ignoré si la réponse rapide est désactivée sur l’ensemble du forum. La réponse rapide sera uniquement affichée aux utilisateurs ayant la permission de poster dans ce forum.',
 	'ENABLE_RECENT'					=> 'Afficher les sujets actifs',
-	'ENABLE_RECENT_EXPLAIN'			=> 'Si réglé sur <samp>Oui</samp>, les sujets actifs du forum seront affichés dans la liste des sujets actifs.',
-	'ENABLE_TOPIC_ICONS'			=> 'Activer les icônes de sujets',
+	'ENABLE_RECENT_EXPLAIN'			=> 'Si activé, les sujets de ce forum seront affichés dans la liste des sujets actifs.',
+	'ENABLE_TOPIC_ICONS'			=> 'Activer les icônes des sujets',
 
 	'FORUM_ADMIN'						=> 'Administration des forums',
-	'FORUM_ADMIN_EXPLAIN'				=> 'Dans phpBB3, les catégories n’existent plus, tout est basé sur la notion de forums. Chaque forum peut contenir un nombre illimité de sous-forums et vous pouvez déterminer s’ils peuvent contenir ou non des messages, comme c’était le cas grâce aux anciennes catégories. Vous pouvez ajouter, éditer, supprimer, verrouiller ou déverrouiller ici des forums de manière individuelle et également régler certains contrôles additionnels. Si vos messages et vos sujets se désynchronisent, vous pouvez également resynchroniser un forum. <strong>Vous devez copier ou régler les permissions appropriées sur chaque nouveau forum créé afin qu’ils soient visibles de manière publique.</strong>',
-	'FORUM_AUTO_PRUNE'					=> 'Activer le délestage automatique',
-	'FORUM_AUTO_PRUNE_EXPLAIN'			=> 'Les sujets du forum seront automatiquement supprimés par rapport au réglage de la fréquence/temps ci-dessous.',
-	'FORUM_CREATED'						=> 'Le forum a été créé avec succès.',
+	'FORUM_ADMIN_EXPLAIN'				=> 'Dans phpBB3 les catégories n’existent plus, tout est basé sur la notion de forum. Chaque forum peut contenir un nombre illimité de sous-forums et vous pouvez déterminer s’ils peuvent contenir ou non des messages (c’est-à-dire se comporter ou non comme une ancienne catégorie). Vous pouvez individuellement ajouter, modifier, supprimer, verrouiller, déverrouiller des forums et régler certains paramètres. Si des sujets et des messages se désynchronisent vous pouvez également re-synchroniser un forum. <strong>Vous devez copier ou régler les permissions appropriées pour les nouveaux forums créés, afin qu’ils soient visibles.</strong>',
+	'FORUM_AUTO_PRUNE'					=> 'Activer l’auto-délestage',
+	'FORUM_AUTO_PRUNE_EXPLAIN'			=> 'Déleste le forum des sujets, réglez les paramètres de fréquence/ancienneté ci-dessous.',
+	'FORUM_CREATED'						=> 'Le forum a été créé.',
 	'FORUM_DATA_NEGATIVE'				=> 'Les paramètres de délestage ne peuvent pas être négatifs.',
-	'FORUM_DESC_TOO_LONG'				=> 'La description du forum est trop longue. Elle ne doit pas dépasser 4000 caractères.',
 	'FORUM_DELETE'						=> 'Supprimer le forum',
-	'FORUM_DELETE_EXPLAIN'				=> 'Le formulaire ci-dessous vous permet de supprimer un forum. Si le forum contient des sous-forums, des sujets et des messages, vous pouvez sélectionner l’emplacement où vous souhaitez les déplacer.',
-	'FORUM_DELETED'						=> 'Le forum a été supprimé avec succès.',
+	'FORUM_DELETE_EXPLAIN' 				=> 'Le formulaire suivant vous permet de supprimer un forum et de décider où vous désirez déplacer tous les sujets (ou forums) qu’il contient.',	'FORUM_DELETED'	=> 'Le forum a été supprimé.',
 	'FORUM_DESC'						=> 'Description',
-	'FORUM_DESC_EXPLAIN'				=> 'Tout code HTML saisi ici sera affiché comme tel.',
-	'FORUM_EDIT_EXPLAIN'				=> 'Le formulaire ci-dessous vous permet de personnaliser ce forum. La modération et les paramètres de contrôle du compteur de messages sont réglés par l’intermédiaire des permissions du forum concernant chaque utilisateur ou groupe d’utilisateurs.',
+	'FORUM_DESC_EXPLAIN'				=> 'Toute balise HTML saisie sera affichée telle quelle.',
+	'FORUM_DESC_TOO_LONG'				=> 'La description du forum est trop longue. Elle ne peut contenir plus de 4000 caractères.',
+	'FORUM_EDIT_EXPLAIN'				=> 'Le formulaire suivant vous permet de personnaliser ce forum. Notez que la modération et les paramètres de contrôle des messages sont définis via les permissions pour chaque utilisateur ou groupe.',
 	'FORUM_IMAGE'						=> 'Image du forum',
-	'FORUM_IMAGE_EXPLAIN'				=> 'Image additionnelle à associer à ce forum dont l’emplacement est relatif à la racine du répertoire de phpBB.',
-	'FORUM_IMAGE_NO_EXIST'				=> 'L’image du forum que vous avez spécifié n’existe pas',
-	'FORUM_LINK_EXPLAIN'				=> 'Lien complet, incluant le protocole, qui redirigera les utilisateurs vers la destination spécifiée, comme <samp>http://www.phpbb.fr/</samp>.',
-	'FORUM_LINK_TRACK'					=> 'Afficher le nombre de redirections',
-	'FORUM_LINK_TRACK_EXPLAIN'			=> 'Enregistre et affiche le nombre de clics effectués sur le lien.',
+	'FORUM_IMAGE_EXPLAIN'				=> 'Emplacement relatif au répertoire racine de phpBB, d’une image supplémentaire à associer à ce forum.',
+	'FORUM_IMAGE_NO_EXIST'				=> 'L’image du forum spécifiée n’existe pas',
+	'FORUM_LINK_EXPLAIN'				=> 'URL complète (incluant le protocole, exemple <samp>http://</samp> ) qui enverra l’utilisateur vers ce forum.',
+	'FORUM_LINK_TRACK'					=> 'Compter les redirections',
+	'FORUM_LINK_TRACK_EXPLAIN'			=> 'Enregistre le nombre de fois que le lien a été cliqué.',
 	'FORUM_NAME'						=> 'Nom du forum',
-	'FORUM_NAME_EMPTY'					=> 'Veuillez saisir le nom du forum.',
+	'FORUM_NAME_EMPTY'					=> 'Vous devez indiquer un nom pour le forum.',
 	'FORUM_PARENT'						=> 'Forum parent',
-	'FORUM_PASSWORD'					=> 'Mot de passe du forum',
-	'FORUM_PASSWORD_CONFIRM'			=> 'Confirmer le mot de passe du forum',
-	'FORUM_PASSWORD_CONFIRM_EXPLAIN'	=> 'Ne complétez cela que si le mot de passe du forum a été spécifié.',
-	'FORUM_PASSWORD_EXPLAIN'			=> 'Met en place un mot de passe sur ce forum. Utilisez de préférence un système de permissions.',
+	'FORUM_PASSWORD'					=> 'Mot de passe',
+	'FORUM_PASSWORD_CONFIRM'			=> 'Confirmation du mot de passe',
+	'FORUM_PASSWORD_CONFIRM_EXPLAIN'	=> 'Uniquement si un mot de passe a été saisi.',
+	'FORUM_PASSWORD_EXPLAIN'			=> 'Indique un mot de passe pour ce forum, utilisez de préférence le système de permissions.',
 	'FORUM_PASSWORD_UNSET'				=> 'Supprimer le mot de passe du forum',
-	'FORUM_PASSWORD_UNSET_EXPLAIN'		=> 'Ne cochez cette case que si vous souhaitez supprimer le mot de passe du forum.',
-	'FORUM_PASSWORD_OLD'				=> 'Le mot de passe du forum utilise une méthode de hachage obsolète. Vous devriez la modifier.',
-	'FORUM_PASSWORD_MISMATCH'			=> 'Les mots de passe que vous avez saisi ne concordent pas.',
-	'FORUM_PRUNE_SETTINGS'				=> 'Réglages du délestage du forum',
-	'FORUM_RESYNCED'					=> 'Le forum <strong>%s</strong> a été resynchronisé avec succès',
-	'FORUM_RULES_EXPLAIN'				=> 'Les règles du forum sont affichées sur toutes les pages du forum.',
-	'FORUM_RULES_LINK'					=> 'Lien vers les règles du forum',
-	'FORUM_RULES_LINK_EXPLAIN'			=> 'Vous pouvez saisir ici le lien de la page ou du message contenant les règles de votre forum. Ce réglage écrasera les règles du forum qui ont été spécifiées.',
-	'FORUM_RULES_PREVIEW'				=> 'Aperçu des règles du forum',
-	'FORUM_RULES_TOO_LONG'				=> 'Les règles du forum ne doivent pas dépasser 4000 caractères.',
-	'FORUM_SETTINGS'					=> 'Réglages du forum',
+	'FORUM_PASSWORD_UNSET_EXPLAIN'		=> 'Cochez cette case si vous souhaitez supprimer le mot de passe du forum.',
+	'FORUM_PASSWORD_OLD'				=> 'Le mot de passe du forum utilise un ancien type de hash et devrait être modifié.',
+	'FORUM_PASSWORD_MISMATCH'			=> 'Les mots de passe saisis ne concordent pas.',
+	'FORUM_PRUNE_SETTINGS'				=> 'Paramètres du délestage des forums',
+	'FORUM_RESYNCED'					=> 'Le forum “%s” a été resynchronisé',
+	'FORUM_RULES_EXPLAIN'				=> 'Les règles du forum sont affichées sur chaque page du forum.',
+	'FORUM_RULES_LINK'					=> 'Lien vers les règles',
+	'FORUM_RULES_LINK_EXPLAIN'			=> 'Vous pouvez indiquer l’URL de la page ou du message contenant vos règles. Ce paramètre annulera tout texte de règles de forum que vous avez renseigné.',
+	'FORUM_RULES_PREVIEW'				=> 'Aperçu des règles',
+	'FORUM_RULES_TOO_LONG'				=> 'Les règles du forum sont trop longues. Elles ne peuvent contenir plus de 4000 caractères.',
+	'FORUM_SETTINGS'					=> 'Paramètres du forum',
 	'FORUM_STATUS'						=> 'Statut du forum',
 	'FORUM_STYLE'						=> 'Style du forum',
 	'FORUM_TOPICS_PAGE'					=> 'Sujets par page',
-	'FORUM_TOPICS_PAGE_EXPLAIN'			=> 'Si cette valeur est autre que <samp>0</samp>, elle remplacera le réglage par défaut des sujets par page.',
+	'FORUM_TOPICS_PAGE_EXPLAIN'			=> 'Cette valeur (autre que “0”) annulera le paramètre par défaut des sujets par page.',
 	'FORUM_TYPE'						=> 'Type du forum',
-	'FORUM_UPDATED'						=> 'Les informations du forum ont été mises à jour avec succès.',
+	'FORUM_UPDATED'						=> 'Les informations du forum ont été mises à jour.',
 
-	'FORUM_WITH_SUBFORUMS_NOT_TO_LINK'		=> 'Vous souhaitez modifier un forum qui contient des sous-forums dans lesquels vous pouvez rédiger des messages en un forum-lien. Avant de procéder à cette opération, veuillez déplacer tous les sous-forums hors de ce forum, car une fois le forum modifié en forum-lien, vous ne pourrez plus consulter les sous-forums qu’il contient.',
-
-	'GENERAL_FORUM_SETTINGS'	=> 'Réglages généraux du forum',
+	'FORUM_WITH_SUBFORUMS_NOT_TO_LINK'		=> 'Vous souhaitez modifier en un forum-lien, un forum contenant des sous-forums et dans lequel vous pouviez rédiger des messages. Avant de procéder, déplacez tous les sous-forums hors de ce forum, car une fois le forum modifié en un forum-lien, vous ne pourrez plus consulter les sous-forums.',	
+	
+	'GENERAL_FORUM_SETTINGS'	=> 'Paramètres généraux du forum',
 
 	'LINK'						=> 'Lien',
-	'LIST_INDEX'				=> 'Lister le sous-forum dans la légende du forum parent',
-	'LIST_INDEX_EXPLAIN'		=> 'Affiche ce forum sur l’index et sur quelques autres endroits comme lien dans la légende de son forum parent si l’option “Lister les sous-forums dans la légende” est activée.',
+	'LIST_INDEX'				=> 'Liste le sous-forum dans la légende du forum parent',
+	'LIST_INDEX_EXPLAIN'		=> 'Affiche ce forum sur l’index et ailleurs comme lien dans la légende de son forum parent si l’option “Lister les sous-forums dans la légende” est activée.',
 	'LIST_SUBFORUMS'			=> 'Lister les sous-forums dans la légende',
-	'LIST_SUBFORUMS_EXPLAIN'	=> 'Affiche ce forum de sous-forums sur l’index et sur quelques autres endroits comme lien dans la légende de son forum parent si l’option “Lister le sous-forum dans la légende du forum parent” est activée.',
+	'LIST_SUBFORUMS_EXPLAIN'	=> 'Affiche les sous-forums de ce forum sur l’index et ailleurs comme lien dans la légende de son forum parent si l’option “Lister le sous-forum dans la légende du forum parent” est activée.',
 	'LOCKED'					=> 'Verrouillé',
 
-	'MOVE_POSTS_NO_POSTABLE_FORUM'	=> 'Le forum que vous avez sélectionné afin de déplacer le contenu n’est pas approprié. Veuillez sélectionner un forum dans lequel il est possible d’accueillir des messages.',
-	'MOVE_POSTS_TO'					=> 'Déplacer les messages vers',
-	'MOVE_SUBFORUMS_TO'				=> 'Déplacer les sous-forums vers',
+	'MOVE_POSTS_NO_POSTABLE_FORUM'	=> 'Le forum que vous avez sélectionné pour y déplacer les messages n’est pas approprié. Sélectionnez un forum destiné à recevoir des messages.',
+	'MOVE_POSTS_TO'					=> 'Déplacer les messages',
+	'MOVE_SUBFORUMS_TO'				=> 'Déplacer les sous-forums',
 
-	'NO_DESTINATION_FORUM'			=> 'Vous n’avez spécifié aucun forum afin de déplacer le contenu.',
-	'NO_FORUM_ACTION'				=> 'Aucune action n’a été définie afin de connaître ce qui se produit avec le contenu du forum.',
+	'NO_DESTINATION_FORUM'			=> 'Vous n’avez pas indiquer de forum pour déplacer le contenu',
+	'NO_FORUM_ACTION'				=> 'Aucune action définie pour ce qui se produit avec le contenu du forum',
 	'NO_PARENT'						=> 'Aucun parent',
 	'NO_PERMISSIONS'				=> 'Ne pas copier les permissions',
-	'NO_PERMISSION_FORUM_ADD'		=> 'Vous n’avez pas les permissions appropriées afin d’ajouter des forums.',
-	'NO_PERMISSION_FORUM_DELETE'	=> 'Vous n’avez pas les permissions appropriées afin de supprimer des forums.',
+	'NO_PERMISSION_FORUM_ADD'		=> 'Vous n’avez pas les permissions requises pour ajouter des forums.',
+	'NO_PERMISSION_FORUM_DELETE'	=> 'Vous n’avez pas les permissions requises pour supprimer des forums.',
 
-	'PARENT_IS_LINK_FORUM'		=> 'Le forum parent que vous avez sélectionné est un forum-lien. Veuillez spécifier une catégorie ou un forum comme forum parent car les forums-liens ne peuvent pas contenir d’autres forums.',
+	'PARENT_IS_LINK_FORUM'		=> 'Le forum-parent que vous avez indiqué est un forum-lien. Les forums-lien ne peuvent pas avoir de sous-forums, indiquez une autre catégorie ou un autre forum en tant que forum-parent.',
 	'PARENT_NOT_EXIST'			=> 'Le parent n’existe pas.',
 	'PRUNE_ANNOUNCEMENTS'		=> 'Délester les annonces',
-	'PRUNE_STICKY'				=> 'Délester les notes',
+	'PRUNE_STICKY'				=> 'Délester les post-it',
 	'PRUNE_OLD_POLLS'			=> 'Délester les anciens sondages',
-	'PRUNE_OLD_POLLS_EXPLAIN'	=> 'Supprime les sujets contenant des sondages n’ayant aucun vote durant ce nombre de jours.',
+	'PRUNE_OLD_POLLS_EXPLAIN'	=> 'Supprime les sujets avec des sondages sans vote suivant l’ancienneté des messages délestés automatiquement.',
 	
-	'REDIRECT_ACL'	=> 'Vous pouvez à présent %srégler les permissions%s de ce forum.',
+	'REDIRECT_ACL'	=> 'Vous pouvez désormais %sdéfinir les permissions%s de ce forum.',
 
 	'SYNC_IN_PROGRESS'			=> 'Synchronisation du forum',
 	'SYNC_IN_PROGRESS_EXPLAIN'	=> 'Resynchronisation des sujets %1$d/%2$d en cours.',

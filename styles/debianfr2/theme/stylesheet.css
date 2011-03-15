@@ -49,7 +49,7 @@ body {
 	border: 1px solid black;
 	background-color: #eee;
 	background: #eee url('/styles/debianfr2/imageset/mainbg.png') top right no-repeat;
-    -webkit-box-shadow: #999 0px 0px 30px;
+/*    -webkit-box-shadow: #999 0px 0px 30px;*/
     border-top-left-radius: 10px 10px;
     border-top-right-radius: 10px 10px;
 }
@@ -394,9 +394,9 @@ td.profile {
 
 .tablebg {
 	border: 1px solid #888;
-    -webkit-box-shadow: #CCC 0px 7px 20px;
+/*    -webkit-box-shadow: #CCC 0px 7px 20px;
     -moz-box-shadow: #CCC 0px 7px 20px;
-    box-shadow: #CCC 0px 7px 20px;
+    box-shadow: #CCC 0px 7px 20px;*/
     border-bottom-left-radius: 8px 8px;
     border-bottom-right-radius: 8px 8px;
 }

@@ -23,8 +23,8 @@ RewriteEngine On
 # REWRITE BASE
 RewriteBase /
 # HERE IS A GOOD PLACE TO FORCE CANONICAL DOMAIN
-# RewriteCond %{HTTP_HOST} !^www\.debian-fr\.org$ [NC]
-# RewriteRule ^(.*)$ http://www.debian-fr.org/$1 [QSA,L,R=301]
+RewriteCond %{HTTP_HOST} !^www\.debian-fr\.org$ [NC]
+RewriteRule ^(.*)$ http://www.debian-fr.org/$1 [QSA,L,R=301]
 
 # DO NOT GO FURTHER IF THE REQUESTED FILE / DIR DOES EXISTS
 RewriteCond %{REQUEST_FILENAME} -f

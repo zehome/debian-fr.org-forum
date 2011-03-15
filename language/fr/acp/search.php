@@ -1,28 +1,14 @@
 <?php
-/**
-* This file is part of French (Formal Honorifics) phpBB Translation.
-* Copyright (C) 2010 phpBB.fr
+/** 
 *
-* This program is free software; you can redistribute it and/or modify
-* it under the terms of the GNU General Public License as published by
-* the Free Software Foundation; version 2 of the License.
+* acp_search [Standard french]
+* translated originally by PhpBB-fr.com <http://www.phpbb-fr.com/> and phpBB.biz <http://www.phpBB.biz>
 *
-* This program is distributed in the hope that it will be useful,
-* but WITHOUT ANY WARRANTY; without even the implied warranty of
-* MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
-* GNU General Public License for more details.
+* @package language
+* @version $Id$
+* @copyright (c) 2005 phpBB Group 
+* @license http://opensource.org/licenses/gpl-license.php GNU Public License 
 *
-* You should have received a copy of the GNU General Public License along
-* with this program; if not, write to the Free Software Foundation, Inc.,
-* 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
-*
-* acp_search [French (Formal Honorifics)]
-*
-* @package   language
-* @author    Maël Soucaze <maelsoucaze@phpbb.fr> (Maël Soucaze) http://www.phpbb.fr/
-* @copyright 2005 phpBB Group
-* @license   http://www.gnu.org/licenses/gpl-2.0.txt GNU General Public License
-* @version   $Id: search.php 9438 2009-04-11 11:09:45Z acydburn $
 */
 
 /**
@@ -51,72 +37,74 @@ if (empty($lang) || !is_array($lang))
 // in a url you again do not need to specify an order e.g., 'Click %sHERE%s' is fine
 
 $lang = array_merge($lang, array(
-	'ACP_SEARCH_INDEX_EXPLAIN'				=> 'Vous pouvez gérer ici les méthodes d’indexation de la recherche. Étant donné que le moteur de recherche n’utilise qu’une seule méthode d’indexation, vous devriez supprimer toutes les indexations inutilisées. Vous devriez également, après toute modification sur la plupart des réglages de la recherche comme le nombre minimum et maximum de caractères, recréer l’index afin qu’il prenne en compte ces modifications.',
-	'ACP_SEARCH_SETTINGS_EXPLAIN'			=> 'Vous pouvez définir ici la méthode d’indexation de la recherche qui sera utilisée lors de l’indexation de messages et l’exécution de recherches. Vous pouvez régler différentes options qui peuvent influencer sur le nombre d’exécutions que ces actions demandent. Certains de ces réglages sont les mêmes pour toutes les méthodes d’indexation du moteur de recherche.',
-
+	'ACP_SEARCH_INDEX_EXPLAIN'				=> 'Vous pouvez gérer les méthodes d’indexation de la recherche. Comme le moteur de recherche n’utilise qu’une seule méthode d’indexation, vous devriez supprimer toutes les indexations inutilisées. Après la modification de certains paramètres de recherche (comme le nombre minimum/maximum de caractères), il serait préférable de recréer l’index pour qu’il prenne en compte ces modifications.',
+	'ACP_SEARCH_SETTINGS_EXPLAIN'			=> 'Vous pouvez définir quelle méthode d’indexation de recherche sera utilisée pour l’indexation des messages et l’exécution des recherches. Vous pouvez définir différentes options qui peuvent influencer sur la puissance de calcul requise. Certains de ces paramètres sont les mêmes pour toutes les méthodes d’indexation du moteur de recherche.',
+	
 	'COMMON_WORD_THRESHOLD'					=> 'Seuil de mot commun',
-	'COMMON_WORD_THRESHOLD_EXPLAIN'			=> 'Les mots contenus dans la majorité des messages seront considérés comme communs. Les mots communs sont ignorés des recherches. Réglez ceci à “0” afin de désactiver ce comportement. Cela ne prend effet que s’il y a plus de 100 messages. Si vous souhaitez que les mots considérés comme communs soient reconsidérés, vous devez recréer l’index.',
-	'CONFIRM_SEARCH_BACKEND'				=> 'Êtes-vous sûr de vouloir modifier votre méthode d’indexation pour une méthode différente ? Après la modification de la méthode d’indexation, vous devez créer un index. Si vous ne prévoyez pas de restaurer l’ancienne méthode d’indexation, vous pouvez également la supprimer afin de libérer des ressources systèmes.',
-	'CONTINUE_DELETING_INDEX'				=> 'Continuer le processus de suppression de l’ancien index',
-	'CONTINUE_DELETING_INDEX_EXPLAIN'		=> 'Un processus de suppression de l’ancien index a été commencé. Vous devez terminer ou annuler ce dernier afin d’accéder à la page de l’index de la recherche.',
-	'CONTINUE_INDEXING'						=> 'Continuer l’ancien processus d’indexation',
-	'CONTINUE_INDEXING_EXPLAIN'				=> 'Un processus d’indexation de l’ancien index a été commencé. Vous devez terminer ou annuler ce dernier afin d’accéder à la page de l’index de la recherche.',
-	'CREATE_INDEX'							=> 'Créer un index',
-
-	'DELETE_INDEX'							=> 'Supprimer un index',
-	'DELETING_INDEX_IN_PROGRESS'			=> 'Suppression de l’index en cours.',
-	'DELETING_INDEX_IN_PROGRESS_EXPLAIN'	=> 'La méthode d’indexation de la recherche est actuellement en train de vider son index. Cela peut prendre quelques minutes.',
-
-	'FULLTEXT_MYSQL_INCOMPATIBLE_VERSION'	=> 'L’indexation plein texte de MySQL ne peut être utilisée qu’avec MySQL4 et plus.',
-	'FULLTEXT_MYSQL_NOT_MYISAM'				=> 'Les indexations plein texte de MySQL ne peuvent être utilisées qu’avec les tables MyISAM.',
+	'COMMON_WORD_THRESHOLD_EXPLAIN'			=> 'Si un mot est contenu dans un nombre de messages supérieur au pourcentage indiqué, ce mot sera défini comme commun. Ces mots seront par la suite ignorés lors des recherches. Mettre “0” pour désactiver cette option. Cette option ne fonctionne que s’il y a plus de 100 messages sur votre forum. Si vous voulez que les mots actuellement considérés comme communs soient reconsidérés, vous devez recréer l’index.',
+	'CONFIRM_SEARCH_BACKEND'				=> 'Voulez-vous réellement changer la méthode d’indexation? Vous devrez recréer un index de recherche pour la nouvelle méthode. Si vous ne prévoyez pas de réutiliser l’ancienne méthode d’indexation vous pouvez la supprimer pour libérer des ressources système.',
+	'CONTINUE_DELETING_INDEX'				=> 'Continuer le précédent processus de suppression de l’index',
+	'CONTINUE_DELETING_INDEX_EXPLAIN'		=> 'Une suppression d’index de recherche a été commencée. Celle-ci doit être terminée ou annulée pour pouvoir accéder à la page de recherche.',
+	'CONTINUE_INDEXING'						=> 'Continuer le précédent processus d’indexation',
+	'CONTINUE_INDEXING_EXPLAIN'				=> 'Un processus d’indexation a été commencé. Celui-ci doit être terminé ou annulé pour pouvoir accéder à la page de recherche.',
+	'CREATE_INDEX'							=> 'Créer l’index de recherche',
+	
+	'DELETE_INDEX'							=> 'Supprimer l’index de recherche',
+	'DELETING_INDEX_IN_PROGRESS'			=> 'Suppression de l’index de recherche.',
+	'DELETING_INDEX_IN_PROGRESS_EXPLAIN'	=> 'La méthode d’indexation de la recherche est en train de vider son index. Cela peut prendre quelques minutes.',
+	
+	'FULLTEXT_MYSQL_INCOMPATIBLE_VERSION'	=> 'L’indexation FULLTEXT de MySQL ne peut être utilisée qu’à partir de MySQL 4 ou supérieur.',
+	'FULLTEXT_MYSQL_NOT_MYISAM'				=> 'Les indexations FULLTEXT de MySQL ne peuvent être utilisés qu’avec les tables MyISAM.',
 	'FULLTEXT_MYSQL_TOTAL_POSTS'			=> 'Nombre total de messages indexés',
-	'FULLTEXT_MYSQL_MBSTRING'				=> 'Support des caractères UTF-8 non-latins utilisant mbstring :',
-	'FULLTEXT_MYSQL_PCRE'					=> 'Support des caractères UTF-8 non-latins utilisant PCRE :',
-	'FULLTEXT_MYSQL_MBSTRING_EXPLAIN'		=> 'Si PCRE n’a aucune propriété de caractère unicode, l’index de la recherche essaiera d’utiliser le moteur d’expressions régulières de mbstring.',
-	'FULLTEXT_MYSQL_PCRE_EXPLAIN'			=> 'Si vous souhaitez rechercher des caractères non-latins, vous allez avoir besoin des propriétés de caractère unicode de PCRE qui ne sont disponibles que dans PHP 4.4, 5.1 et plus.',
+	'FULLTEXT_MYSQL_MBSTRING'				=> 'Support des caractères non-latin UTF-8 utilisant mbstring:',
+	'FULLTEXT_MYSQL_PCRE'					=> 'Support des caractères non-latin UTF-8 utilisant PCRE:',
+	'FULLTEXT_MYSQL_MBSTRING_EXPLAIN'		=> 'Si PCRE n’a pas les propriétés de caractère unicode, la recherche s’effectuera en utilisant le moteur d’expressions régulières mbstring.',
+	'FULLTEXT_MYSQL_PCRE_EXPLAIN'			=> 'La recherche nécessite les propriétés de caractère unicode PCRE, disponibles seulement depuis PHP 4.4, 5.1 et supérieur, si vous voulez effectuer une recherche sur des caractères non-latin.',
+	'FULLTEXT_MYSQL_MIN_SEARCH_CHARS_EXPLAIN'	=> 'Les mots comportant ce nombre de caractères seront indexés pour la recherche. Il n’y a que vous ou votre hébergeur qui puissiez changer la configuration de MySQL.',
+	'FULLTEXT_MYSQL_MAX_SEARCH_CHARS_EXPLAIN'	=> 'Les mots ne dépassant pas ce nombre de caractères seront indexés pour la recherche. Il n’y a que vous ou votre hébergeur qui puissiez changer la configuration de MySQL.',
 
-	'GENERAL_SEARCH_SETTINGS'				=> 'Réglages généraux de la recherche',
-	'GO_TO_SEARCH_INDEX'					=> 'Aller sur la page d’index de la recherche',
-
+	'GENERAL_SEARCH_SETTINGS'				=> 'Paramètres généraux de recherche',
+	'GO_TO_SEARCH_INDEX'					=> 'Aller à la page d’index de la recherche',
+	
 	'INDEX_STATS'							=> 'Statistiques de l’index',
 	'INDEXING_IN_PROGRESS'					=> 'Indexation en cours',
-	'INDEXING_IN_PROGRESS_EXPLAIN'			=> 'La méthode d’indexation de la recherche est actuellement en train d’indexer tous les messages du forum. Ce processus peut prendre un certain temps selon la taille de votre forum.',
-
-	'LIMIT_SEARCH_LOAD'						=> 'Limite de la charge du système de la page de recherche',
-	'LIMIT_SEARCH_LOAD_EXPLAIN'				=> 'Si la charge du système dépasse cette valeur durant une minute, la page de recherche sera mise hors-ligne, 1.0 équivalant à ~100 % d’utilisation du processeur. Cela ne fonctionne que sur les serveurs basés sous UNIX.',
-
-	'MAX_SEARCH_CHARS'						=> 'Nombre maximum de caractères indexés dans la recherche',
-	'MAX_SEARCH_CHARS_EXPLAIN'				=> 'Les mots contenant moins de caractères seront indexés dans la recherche.',
+	'INDEXING_IN_PROGRESS_EXPLAIN'			=> 'La méthode d’indexation de la recherche est actuellement en train d’indexer tous les messages du forum. Cela peut prendre de quelques minutes à quelques heures selon la taille de votre forum.',
+	
+	'LIMIT_SEARCH_LOAD'						=> 'Limite de la charge système de la recherche',
+	'LIMIT_SEARCH_LOAD_EXPLAIN'				=> 'Si la charge du système dépasse cette valeur durant une minute, la recherche sera désactivée, une valeur à 1.0 équivaut environ à 100% d’utilisation d’un processeur. Cela fonctionne uniquement sur les serveurs basés sous UNIX.',
+	
+	'MAX_SEARCH_CHARS'						=> 'Caractères maximum indexés par la recherche',
+	'MAX_SEARCH_CHARS_EXPLAIN'				=> 'Seuls les mots inférieurs ou égaux à ce nombre de caractères seront indexés.',
 	'MAX_NUM_SEARCH_KEYWORDS'				=> 'Nombre maximum de mots clés autorisés',
-	'MAX_NUM_SEARCH_KEYWORDS_EXPLAIN'		=> 'Nombre maximum de mots que l’utilisateur peut être capable de rechercher. Une valeur de “0” autorise un nombre illimité de mots.',
-	'MIN_SEARCH_CHARS'						=> 'Nombre minimum de caractères indexés dans la recherche',
-	'MIN_SEARCH_CHARS_EXPLAIN'				=> 'Les mots contenant plus de caractères seront indexés dans la recherche.',
-	'MIN_SEARCH_AUTHOR_CHARS'				=> 'Nombre minimum de caractères du nom de l’auteur',
-	'MIN_SEARCH_AUTHOR_CHARS_EXPLAIN'		=> 'Nombre minimum de caractères que les utilisateurs doivent saisir lors d’une recherche d’auteurs avec un joker. Si le nom de l’auteur est plus court que ce nombre, ils devront saisir son nom d’utilisateur complet afin de rechercher ses messages.',
-
+	'MAX_NUM_SEARCH_KEYWORDS_EXPLAIN'		=> 'Nombre maximum de mots que l’utilisateur est capable de rechercher. Une valeur à “0” autorise un nombre illimité de mots.',
+	'MIN_SEARCH_CHARS'						=> 'Caractères minimum indexés par la recherche',
+	'MIN_SEARCH_CHARS_EXPLAIN'				=> 'Seuls les mots supérieurs ou égaux à ce nombre de caractères seront indexés.',
+	'MIN_SEARCH_AUTHOR_CHARS'				=> 'Caractères minimum du nom de l’auteur',
+	'MIN_SEARCH_AUTHOR_CHARS_EXPLAIN'		=> 'Les utilisateurs doivent entrer au moins ce nombre de caractères en exécutant une recherche par auteur avec un joker Si le nom d’auteur est plus court que ce nombre vous pourrez tout de même rechercher ses messages en saisissant son nom complet.',
+	
 	'PROGRESS_BAR'							=> 'Barre de progression',
-
-	'SEARCH_GUEST_INTERVAL'					=> 'Intervalle de flood de la recherche des invités',
-	'SEARCH_GUEST_INTERVAL_EXPLAIN'			=> 'Nombre de secondes qu’un invité doit attendre entre chaque recherche. Si un invité est en train d’effectuer une recherche, tous les autres invités doivent attendre que ce temps d’intervalle soit expiré.',
-	'SEARCH_INDEX_CREATE_REDIRECT'			=> 'Tous les messages depuis le message dont l’ID est %1$d sont maintenant indexés, ce qui correspond à %2$d messages.<br />Le taux actuel d’indexation est approximativement de %3$.1f messages par seconde.<br />Indexation en cours…',
-	'SEARCH_INDEX_DELETE_REDIRECT'			=> 'Tous les messages depuis le message dont l’ID est %1$d ont été supprimés de l’index de recherche.<br />Suppression en cours…',
-	'SEARCH_INDEX_CREATED'					=> 'Tous les messages ont été indexés dans la base de données du forum avec succès.',
-	'SEARCH_INDEX_REMOVED'					=> 'L’index de recherche a été supprimé de cette méthode d’indexation avec succès.',
-	'SEARCH_INTERVAL'						=> 'Intervalle de flood de la recherche des utilisateurs',
-	'SEARCH_INTERVAL_EXPLAIN'				=> 'Nombre de secondes qu’un utilisateur doit attendre entre chaque recherche. Cet intervalle est vérifié indépendamment pour chaque utilisateur.',
-	'SEARCH_STORE_RESULTS'					=> 'Durée de la mise en cache des résultats de la recherche',
-	'SEARCH_STORE_RESULTS_EXPLAIN'			=> 'Les résultats de la recherche mis en cache expireront après cette durée exprimée en secondes. Réglez ceci à “0” afin de désactiver la mise en cache des résultats de la recherche.',
+	
+	'SEARCH_GUEST_INTERVAL'					=> 'Intervalle de flood des invités',
+	'SEARCH_GUEST_INTERVAL_EXPLAIN'			=> 'Nombre de secondes que les invités doivent attendre entre chaque recherche. Si un invité lance une recherche, tous les autres doivent attendre que ce délai soit écoulé.',
+	'SEARCH_INDEX_CREATE_REDIRECT'			=> 'Tous les messages ayant un id inférieur à %1$d ont été indexés, actuellement %2$d messages l’ont été.<br />Le taux actuel d’indexation est de %3$.1f messages par seconde.<br />Indexation en cours…',
+	'SEARCH_INDEX_DELETE_REDIRECT'			=> 'Tous les messages ayant un id inférieur à %1$d ont été effacés de l’index de recherche.<br />Effacement en cours…',
+	'SEARCH_INDEX_CREATED'					=> 'Tous les messages du forum ont été indexés.',  
+	'SEARCH_INDEX_REMOVED'					=> 'L’index de recherche a été supprimé.',
+	'SEARCH_INTERVAL'						=> 'Intervalle de flood des utilisateurs',
+	'SEARCH_INTERVAL_EXPLAIN'				=> 'Nombre de secondes que les utilisateurs doivent attendre entre chaque recherche. Cet intervalle est contrôlé indépendamment pour chaque utilisateur.',
+	'SEARCH_STORE_RESULTS'					=> 'Durée de la mise en cache des résultats',
+	'SEARCH_STORE_RESULTS_EXPLAIN'			=> 'Les résultats de la recherche mis en cache expireront après cette durée, en secondes. Mettre “0” pour désactiver la mise en cache de la recherche.',
 	'SEARCH_TYPE'							=> 'Méthode d’indexation de la recherche',
-	'SEARCH_TYPE_EXPLAIN'					=> 'phpBB vous permet de choisir la méthode d’indexation qui est utilisée lors de la recherche de texte dans le contenu des messages. Par défaut, la recherche utilisera la recherche plein texte propre à phpBB.',
-	'SWITCHED_SEARCH_BACKEND'				=> 'Vous avez modifié la méthode d’indexation de la recherche avec succès. Vous devriez à présent recréer un index.',
-
+	'SEARCH_TYPE_EXPLAIN'					=> 'phpBB vous permet de choisir la méthode d’indexation utilisée pour la recherche de texte dans le contenu des messages. Par défaut, la recherche utilisera la recherche FULLTEXT de phpBB.',
+	'SWITCHED_SEARCH_BACKEND'				=> 'Vous avez modifié la méthode d’indexation de la recherche. Afin d’utiliser la nouvelle méthode d’indexation, vous devrez vous assurer qu’il existe bien un index de recherche pour celle-ci.',
+	
 	'TOTAL_WORDS'							=> 'Nombre total de mots indexés',
-	'TOTAL_MATCHES'							=> 'Nombre total de mots indexés en relation avec les sujets',
-
-	'YES_SEARCH'							=> 'Activer la fonctionnalité de la recherche',
-	'YES_SEARCH_EXPLAIN'					=> 'Active la fonctionnalité de la recherche, incluant la recherche des membres.',
-	'YES_SEARCH_UPDATE'						=> 'Activer la mise à jour plein texte',
-	'YES_SEARCH_UPDATE_EXPLAIN'				=> 'Met à jour les index plein texte lors des publications. Ce réglage n’est pas pris en compte si la recherche est désactivée.',
+	'TOTAL_MATCHES'							=> 'Nombre total de mots indexées en relation avec les messages',
+	
+	'YES_SEARCH'							=> 'Activer la fonction de recherche',
+	'YES_SEARCH_EXPLAIN'					=> 'Active la fonctionnalité de recherche, ce qui inclut la recherche des membres.',
+	'YES_SEARCH_UPDATE'						=> 'Activer la mise à jour de FULLTEXT',
+	'YES_SEARCH_UPDATE_EXPLAIN'				=> 'Met à jour les index de FULLTEXT lors de la publication de messages, ignoré si la recherche est désactivé.',
 ));
 
 ?>

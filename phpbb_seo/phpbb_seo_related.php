@@ -2,7 +2,7 @@
 /**
 *
 * @package phpBB SEO Related topics
-* @version $Id: phpbb_seo_related.php 222 2010-02-27 13:08:48Z dcz $
+* @version $Id$
 * @copyright (c) 2006 - 2010 www.phpbb-seo.com
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License v2
 *

@@ -1,28 +1,14 @@
 <?php
-/**
-* This file is part of French (Formal Honorifics) phpBB Translation.
-* Copyright (C) 2010 phpBB.fr
+/** 
 *
-* This program is free software; you can redistribute it and/or modify
-* it under the terms of the GNU General Public License as published by
-* the Free Software Foundation; version 2 of the License.
+* search [Standard french]
+* translated originally by PhpBB-fr.com <http://www.phpbb-fr.com/> and phpBB.biz <http://www.phpBB.biz>
 *
-* This program is distributed in the hope that it will be useful,
-* but WITHOUT ANY WARRANTY; without even the implied warranty of
-* MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
-* GNU General Public License for more details.
+* @package language
+* @version $Id$
+* @copyright (c) 2005 phpBB Group 
+* @license http://opensource.org/licenses/gpl-license.php GNU Public License 
 *
-* You should have received a copy of the GNU General Public License along
-* with this program; if not, write to the Free Software Foundation, Inc.,
-* 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
-*
-* search [French (Formal Honorifics)]
-*
-* @package   language
-* @author    Maël Soucaze <maelsoucaze@phpbb.fr> (Maël Soucaze) http://www.phpbb.fr/
-* @copyright 2005 phpBB Group
-* @license   http://www.gnu.org/licenses/gpl-2.0.txt GNU General Public License
-* @version   $Id: search.php 10004 2009-08-17 13:25:04Z rxu $
 */
 
 /**
@@ -51,69 +37,69 @@ if (empty($lang) || !is_array($lang))
 // in a url you again do not need to specify an order e.g., 'Click %sHERE%s' is fine
 
 $lang = array_merge($lang, array(
-	'ALL_AVAILABLE'			=> 'Tous disponibles',
-	'ALL_RESULTS'			=> 'Tous les résultats',
+	'ALL_AVAILABLE'   => 'Tous disponibles',
+	'ALL_RESULTS'   => 'Tous les résultats',
 
-	'DISPLAY_RESULTS'		=> 'Afficher les résultats sous forme de',
+	'DISPLAY_RESULTS'   => 'Afficher les résultats sous forme de',
 
-	'FOUND_SEARCH_MATCH'		=> 'La recherche a retourné %d résultat',
-	'FOUND_SEARCH_MATCHES'		=> 'La recherche a retourné %d résultats',
-	'FOUND_MORE_SEARCH_MATCHES'	=> 'La recherche a retourné plus de %d résultats',
+	'FOUND_SEARCH_MATCH'   => '%d résultat trouvé',
+    'FOUND_SEARCH_MATCHES'   => '%d résultats trouvés',
+	'FOUND_MORE_SEARCH_MATCHES'   => 'La recherche a trouvé plus de %d résultats',
 
-	'GLOBAL'				=> 'Annonce globale',
+	'GLOBAL'   => 'Annonce globale',
 
-	'IGNORED_TERMS'			=> 'ignorés',
-	'IGNORED_TERMS_EXPLAIN'	=> 'Les mots suivants ont été ignorés de votre recherche car ils étaient trop courants : <strong>%s</strong>.',
+	'IGNORED_TERMS'   => 'ignoré',
+	'IGNORED_TERMS_EXPLAIN'   => 'Les mots suivants de votre recherche ont été ignorés parce qu’ils sont trop communs: <strong>%s</strong>.',
 
-	'JUMP_TO_POST'			=> 'Sauter vers le message',
+	'JUMP_TO_POST' => 'Aller au message',
 
-	'LOGIN_EXPLAIN_EGOSEARCH'	=> 'Vous devez vous inscrire et vous connecter afin de consulter vos messages.',
-	'LOGIN_EXPLAIN_UNREADSEARCH'=> 'Vous devez vous inscrire et vous connecter afin de consulter vos messages non lus.',
+	'LOGIN_EXPLAIN_EGOSEARCH'			=> 'Vous devez être enregistré et connecté afin de voir vos propres messages.',
+	'LOGIN_EXPLAIN_UNREADSEARCH'=> 'Vous devez être enregistré et connecté pour voir les messages non lus.',
+	'MAX_NUM_SEARCH_KEYWORDS_REFINE'	=> 'Vous avez spécifié un nombre de mots trop important à rechercher. N’entrez pas plus de %1$d mots.',
+	
+	'NO_KEYWORDS'   => 'Vous devez indiquer au moins un mot pour effectuer une recherche. Chaque mot doit se composer d’au moins %d caractères et ne doit pas en contenir plus de %d en excluant les jokers.',
+	'NO_RECENT_SEARCHES'   => 'Aucune recherche n’a été effectuée récemment.',
+	'NO_SEARCH'   => 'Désolé mais vous n’êtes pas autorisé à utiliser le système de recherche.',
+	'NO_SEARCH_RESULTS'   => 'Aucun sujet ou message ne correspond à vos critères de recherche.',
+	'NO_SEARCH_TIME'   => 'Désolé mais vous ne pouvez pas utiliser la fonction recherche actuellement. Merci de réessayer dans quelques instants.',
+	'NO_SEARCH_UNREADS'		=> 'Désolé mais la recherche des messages non lus a été désactivée sur ce forum.',
+	'WORD_IN_NO_POST'   => 'Aucun résultat trouvé pour le mot <strong>%s</strong>.',
+	'WORDS_IN_NO_POST'   => 'Aucun résultat trouvé pour les mots <strong>%s</strong>.',
 
-	'MAX_NUM_SEARCH_KEYWORDS_REFINE'	=> 'Vous avez spécifié un nombre de mots trop important à rechercher. Veuillez ne pas saisir plus de %1$d mots.',
+	'POST_CHARACTERS'   => 'premiers caractères des messages',
 
-	'NO_KEYWORDS'			=> 'Vous devez spécifier au moins un mot afin d’effectuer une recherche. Chaque mot doit être composé d’au moins %d caractères et ne doit pas contenir plus de %d caractères, en excluant les jokers.',
-	'NO_RECENT_SEARCHES'	=> 'Aucune recherche n’a été effectuée récemment.',
-	'NO_SEARCH'				=> 'Désolé, mais vous n’êtes pas autorisé à utiliser le système de recherche.',
-	'NO_SEARCH_RESULTS'		=> 'Aucun résultat approprié n’a été trouvé.',
-	'NO_SEARCH_TIME'		=> 'Désolé, mais vous ne pouvez pas utiliser le système de recherche actuellement. Veuillez réessayer ultérieurement.',
-	'WORD_IN_NO_POST'		=> 'Aucun message n’a été trouvé car le mot <strong>%s</strong> n’est contenu dans aucun message.',
-	'WORDS_IN_NO_POST'		=> 'Aucun message n’a été trouvé car les mots <strong>%s</strong> ne sont contenus dans aucun message.',
+	'RECENT_SEARCHES'   => 'Recherches récentes',
+	'RESULT_DAYS'   => 'Rechercher depuis',
+	'RESULT_SORT'   => 'Classer les résultats par',
+	'RETURN_FIRST'   => 'Renvoyer les',
+	'RETURN_TO_SEARCH_ADV'   => 'Revenir à la recherche avancée',
 
-	'POST_CHARACTERS'		=> 'caractères des messages',
+	'SEARCHED_FOR'   => 'Rechercher les termes utilisés',
+    'SEARCHED_TOPIC'   => 'Sujet recherché',
+    'SEARCH_ALL_TERMS'   => 'Rechercher tous les termes',
+    'SEARCH_ANY_TERMS'   => 'Rechercher n’importe lequel de ces termes',
+    'SEARCH_AUTHOR'   => 'Rechercher par auteur',
+	'SEARCH_AUTHOR_EXPLAIN'   => 'Utilisez un * comme joker pour des recherches partielles.',
+    'SEARCH_FIRST_POST'   => 'Premier message des sujets uniquement',
+    'SEARCH_FORUMS'   => 'Rechercher dans les forums',
+    'SEARCH_FORUMS_EXPLAIN'   => 'Choisissez le forum ou les forums dans le(s)quel(s) vous souhaitez effectuer une recherche. Les sous-forums sont automatiquement inclus si vous ne désactivez pas l’option ci-dessous “Rechercher dans les sous-forums”.',
+    'SEARCH_IN_RESULTS'   => 'Rechercher dans ces résultats',
+    'SEARCH_KEYWORDS_EXPLAIN'   => 'Placez un <strong>+</strong> devant un mot qui doit être trouvé et un <strong>-</strong> devant un mot qui doit être exclu. Tapez une suite de mots séparés par des <strong>|</strong> entre crochets si uniquement un des mots doit être trouvé. Utilisez un * comme joker pour des recherches partielles.',
+	'SEARCH_MSG_ONLY'   => 'Messages uniquement',
+	'SEARCH_OPTIONS'   => 'Options de recherche',
+	'SEARCH_QUERY'   => 'Rechercher',
+	'SEARCH_SUBFORUMS'   => 'Rechercher dans les sous-forums',
+	'SEARCH_TITLE_MSG'   => 'Titres et messages',
+	'SEARCH_TITLE_ONLY'   => 'Titres uniquement',
+	'SEARCH_WITHIN'   => 'Rechercher dans',
+	'SORT_ASCENDING'   => 'Croissant',
+    'SORT_AUTHOR'   => 'Auteur',
+	'SORT_DESCENDING'   => 'Décroissant',
+    'SORT_FORUM'   => 'Forum',
+    'SORT_POST_SUBJECT'   => 'Sujet du message',
+    'SORT_TIME'   => 'Date',
 
-	'RECENT_SEARCHES'		=> 'Recherches effectuées récemment',
-	'RESULT_DAYS'			=> 'Limiter les résultats au précédent',
-	'RESULT_SORT'			=> 'Trier les résultats par',
-	'RETURN_FIRST'			=> 'Retourner en premier les',
-	'RETURN_TO_SEARCH_ADV'	=> 'Retour à la recherche avancée',
-
-	'SEARCHED_FOR'				=> 'Rechercher les termes utilisés',
-	'SEARCHED_TOPIC'			=> 'Sujet recherché',
-	'SEARCH_ALL_TERMS'			=> 'Rechercher tous les termes ou utiliser une question comme entrée',
-	'SEARCH_ANY_TERMS'			=> 'Rechercher n’importe quels de ces termes',
-	'SEARCH_AUTHOR'				=> 'Rechercher par auteur',
-	'SEARCH_AUTHOR_EXPLAIN'		=> 'Utilisez * comme joker si vous souhaitez effectuer des recherches partielles.',
-	'SEARCH_FIRST_POST'			=> 'Premier message des sujets uniquement',
-	'SEARCH_FORUMS'				=> 'Rechercher dans les forums',
-	'SEARCH_FORUMS_EXPLAIN'		=> 'Sélectionnez le forum ou les forums dans le(s)quel(s) vous souhaitez effectuer une recherche. Les sous-forums seront automatiquement inclus dans la recherche si vous ne désactivez pas ci-dessous l’option “Rechercher dans les sous-forums”.',
-	'SEARCH_IN_RESULTS'			=> 'Rechercher dans ces résultats',
-	'SEARCH_KEYWORDS_EXPLAIN'	=> 'Insérez <strong>+</strong> devant un mot qui doit être trouvé et <strong>-</strong> devant un mot qui ne doit pas être trouvé. Insérez une liste de mots séparés entre des barres verticales discontinues <strong>|</strong> si seul un des mots doit être trouvé. Utilisez * comme joker si vous souhaitez effectuer des recherches partielles.',
-	'SEARCH_MSG_ONLY'			=> 'Contenu des messages uniquement',
-	'SEARCH_OPTIONS'			=> 'Options de la recherche',
-	'SEARCH_QUERY'				=> 'Question de la recherche',
-	'SEARCH_SUBFORUMS'			=> 'Rechercher dans les sous-forums',
-	'SEARCH_TITLE_MSG'			=> 'Titres des sujets et contenu des messages',
-	'SEARCH_TITLE_ONLY'			=> 'Titres des sujets uniquement',
-	'SEARCH_WITHIN'				=> 'Rechercher dans',
-	'SORT_ASCENDING'			=> 'Croissant',
-	'SORT_AUTHOR'				=> 'Auteur',
-	'SORT_DESCENDING'			=> 'Décroissant',
-	'SORT_FORUM'				=> 'Forum',
-	'SORT_POST_SUBJECT'			=> 'Sujet du message',
-	'SORT_TIME'					=> 'Heure du message',
-
-	'TOO_FEW_AUTHOR_CHARS'	=> 'Vous devez spécifier au moins %d caractères du nom des auteurs.',
+	'TOO_FEW_AUTHOR_CHARS'   => 'Vous devez indiquer au moins %d caractères du nom de l’auteur.',
 ));
 
 ?>
