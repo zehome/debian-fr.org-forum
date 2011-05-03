@@ -1,28 +1,14 @@
 <?php
-/**
-* This file is part of French (Formal Honorifics) phpBB Translation.
-* Copyright (C) 2010 phpBB.fr
+/** 
 *
-* This program is free software; you can redistribute it and/or modify
-* it under the terms of the GNU General Public License as published by
-* the Free Software Foundation; version 2 of the License.
+* acp_ban [Standard french]
+* translated originally by PhpBB-fr.com <http://www.phpbb-fr.com/> and phpBB.biz <http://www.phpBB.biz>
 *
-* This program is distributed in the hope that it will be useful,
-* but WITHOUT ANY WARRANTY; without even the implied warranty of
-* MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
-* GNU General Public License for more details.
+* @package language
+* @version $Id$
+* @copyright (c) 2005 phpBB Group 
+* @license http://opensource.org/licenses/gpl-license.php GNU Public License 
 *
-* You should have received a copy of the GNU General Public License along
-* with this program; if not, write to the Free Software Foundation, Inc.,
-* 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
-*
-* acp_ban [French (Formal Honorifics)]
-*
-* @package   language
-* @author    Maël Soucaze <maelsoucaze@phpbb.fr> (Maël Soucaze) http://www.phpbb.fr/
-* @copyright 2005 phpBB Group
-* @license   http://www.gnu.org/licenses/gpl-2.0.txt GNU General Public License
-* @version   $Id: ban.php 9727 2009-07-07 13:33:53Z nickvergessen $
 */
 
 /**
@@ -56,42 +42,44 @@ $lang = array_merge($lang, array(
 	'30_MINS'		=> '30 minutes',
 	'6_HOURS'		=> '6 heures',
 
-	'ACP_BAN_EXPLAIN'	=> 'Vous pouvez contrôler ici le bannissement d’utilisateurs par nom, adresse IP ou adresse e-mail. Ces différentes méthodes empêchent qu’un utilisateur indésirable puisse participer à l’ensemble des discussions de votre forum. Si vous le souhaitez, vous pouvez fournir une raison de 3000 caractères maximum qui sera affichée à l’utilisateur banni. Cela sera également affiché dans l’historique des administrateurs. La durée du bannissement peut également être spécifiée. Si vous souhaitez que le bannissement expire à une date spécifique plutôt qu’après une certaine période de temps, sélectionnez <span style="text-decoration: underline;">Jusqu’à -&gt;</span> concernant la durée du bannissement et saisissez une date au format <kbd>AAAA-MM-JJ</kbd>.',
+	'ACP_BAN_EXPLAIN'	=> 'Vous pouvez contrôler le bannissement d’utilisateurs par nom, adresse IP ou adresse e-mail. Ces méthodes empêchent un utilisateur d’atteindre n’importe quelle partie du forum. Vous pouvez donner si vous le souhaitez une courte raison (3000 caractères maximum) au bannissement. Cela sera affiché dans l’historique de l’administration. La durée du bannissement peut également être indiquée. Si vous voulez que le bannissement termine à une date particulière plutôt qu’après une période de temps, sélectionnez <span style="text-decoration: underline;">Jusqu’à -&gt;</span> pour la durée du bannissement et entrez une date au format <kbd>AAAA-MM-JJ</kbd>.',
 
 	'BAN_EXCLUDE'			=> 'Exclure du bannissement',
 	'BAN_LENGTH'			=> 'Durée du bannissement',
 	'BAN_REASON'			=> 'Raison du bannissement',
-	'BAN_GIVE_REASON'		=> 'Raison affichée à l’utilisateur banni',
-	'BAN_UPDATE_SUCCESSFUL'	=> 'La liste des bannissements a été mise à jour avec succès.',
-	'BANNED_UNTIL_DATE'		=> 'jusqu’au %s', // Example: "until Mon 13.Jul.2009, 14:44"
-	'BANNED_UNTIL_DURATION'	=> '%1$s (jusqu’au %2$s)', // Example: "7 days (until Tue 14.Jul.2009, 14:44)"
+	'BAN_GIVE_REASON'		=> 'Raison affichée du bannissement',
+	'BAN_UPDATE_SUCCESSFUL'	=> 'La liste des bannissements a été mise à jour.',
+	'BANNED_UNTIL_DATE'		=> 'Jusqu’au %s', // Example: "until Mon 13.Jul.2009, 14:44"
+	'BANNED_UNTIL_DURATION'	=> '%1$s (Jusqu’au %2$s)', // Example: "7 days (until Tue 14.Jul.2009, 14:44)"
 
 	'EMAIL_BAN'					=> 'Bannir une ou plusieurs adresses e-mails',
-	'EMAIL_BAN_EXCLUDE_EXPLAIN'	=> 'Activez ceci afin d’exclure les adresses e-mails spécifiées de tous les bannissements actuels.',
-	'EMAIL_BAN_EXPLAIN'			=> 'Pour spécifier plusieurs adresses e-mails, saisissez chacune d’elles sur une nouvelle ligne. Pour utiliser partiellement des adresses, utilisez * comme joker, comme <samp>*@hotmail.com</samp>, <samp>*@*.domaine.tld</samp>, etc.',
-	'EMAIL_NO_BANNED'			=> 'Aucune adresse e-mail n’a été bannie',
-	'EMAIL_UNBAN'				=> 'Exclure les e-mails du bannissement',
-	'EMAIL_UNBAN_EXPLAIN'		=> 'Vous pouvez exclure plusieurs adresses e-mails du bannissement en une seule fois en utilisant la combinaison appropriée de la souris et du clavier de votre ordinateur et de votre navigateur. Les adresses e-mails exclues sont grisées.',
+	'EMAIL_BAN_EXCLUDE_EXPLAIN'	=> 'Si activé, permet d’exclure de toutes les interdictions courantes les adresses e-mails renseignées.',
+	'EMAIL_BAN_EXPLAIN'			=> 'Pour indiquer plus d’une adresse e-mail, entrez chacune d’elles sur une nouvelle ligne. Pour effectuer une interdiction sur une partie du nom, utilisez * comme caractère joker, par exemple: *@hotmail.com, *@*.domain.tld, etc.',
+	'EMAIL_NO_BANNED'			=> 'Aucune adresse e-mail bannie',
+	'EMAIL_UNBAN'				=> 'Débannir ou ne plus exclure des adresses e-mails',
+	'EMAIL_UNBAN_EXPLAIN'		=> 'Vous pouvez débannir (ou ne plus exclure) plusieurs adresses e-mails d’un coup en utilisant la combinaison de touches appropriée avec votre clavier et votre souris. Les adresses e-mails exclues sont grisées et en gras.',
 
-	'IP_BAN'					=> 'Bannir une ou plusieurs IP',
-	'IP_BAN_EXCLUDE_EXPLAIN'	=> 'Activez ceci afin d’exclure les adresses IP spécifiées de tous les bannissements actuels.',
-	'IP_BAN_EXPLAIN'			=> 'Pour spécifier plusieurs adresses IP ou noms d’hôtes, saisissez chacun d’eux sur une nouvelle ligne. Pour spécifier une plage d’adresses IP, séparez le début et la fin par un tiret (-) et pour spécifier un joker, utilisez “*”.',
-	'IP_HOSTNAME'				=> 'Adresses IP ou noms d’hôtes',
-	'IP_NO_BANNED'				=> 'Aucune adresse IP n’a été bannie',
-	'IP_UNBAN'					=> 'Exclure les IP du bannissement',
-	'IP_UNBAN_EXPLAIN'			=> 'Vous pouvez exclure plusieurs adresses IP du bannissement en une seule fois en utilisant la combinaison appropriée de la souris et du clavier de votre ordinateur et de votre navigateur. Les adresses IP exclues sont grisées.',
+	'IP_BAN'					=> 'Bannir une ou plusieurs adresses IPs',
+	'IP_BAN_EXCLUDE_EXPLAIN'	=> 'Si activé, permet d’exclure de toutes les interdictions courantes les adresses IPs renseignées.',
+	'IP_BAN_EXPLAIN'			=> 'Pour indiquer plusieurs adresses IPs ou noms d’hôtes différents, entrez chacun d’eux sur une nouvelle ligne. Pour indiquer une plage d’adresses IP, séparez le début et la fin par un tiret, et utilisez * comme caractère joker.',
+	'IP_HOSTNAME'				=> 'Adresses IPs ou noms d’hôtes',
+	'IP_NO_BANNED'				=> 'Aucune adresse IP bannie',
+	'IP_UNBAN'					=> 'Débannir ou ne plus exclure des adresses IPs',
+	'IP_UNBAN_EXPLAIN'			=> 'Vous pouvez débannir (ou ne plus exclure) plusieurs adresses IPs d’un coup en utilisant la combinaison de touches appropriée avec votre clavier et votre souris. Les adresses IPs exclues sont grisées et en gras.',
 
-	'LENGTH_BAN_INVALID'		=> 'La date doit être au format <kbd>AAAA-MM-JJ</kbd>.',
+	'LENGTH_BAN_INVALID'		=> 'La date indiquée doit être au format <kbd>AAAA-MM-JJ</kbd>.',
 
 	'PERMANENT'		=> 'Permanent',
 	
 	'UNTIL'						=> 'Jusqu’à',
 	'USER_BAN'					=> 'Bannir un ou plusieurs noms d’utilisateurs',
-	'USER_BAN_EXCLUDE_EXPLAIN'	=> 'Activez ceci afin d’exclure les utilisateurs spécifiés de tous les bannissements actuels.',
-	'USER_BAN_EXPLAIN'			=> 'Pour spécifier plusieurs utilisateurs, saisissez chacun d’eux sur une nouvelle ligne. Utilisez la fonction <span style="text-decoration: underline;">Trouver un membre</span> afin de rechercher et d’ajouter automatiquement un ou plusieurs utilisateurs.',
-	'USER_NO_BANNED'			=> 'Aucun nom d’utilisateur n’a été banni',
-	'USER_UNBAN'				=> 'Exclure les noms d’utilisateurs',
-	'USER_UNBAN_EXPLAIN'		=> 'Vous pouvez exclure plusieurs utilisateurs du bannissement en une seule fois en utilisant la combinaison appropriée de la souris et du clavier de votre ordinateur et de votre navigateur. Les utilisateurs exclus sont grisés.',
+	'USER_BAN_EXCLUDE_EXPLAIN'	=> 'Si activé, permet d’exclure de toutes les interdictions courantes les noms d’utilisateurs renseignés.',
+	'USER_BAN_EXPLAIN'			=> 'Vous pouvez bannir plusieurs utilisateurs en une fois en entrant chaque nom sur une nouvelle ligne. Utilisez la fonction <span style="text-decoration: underline;">Rechercher un membre</span> pour ajouter un ou plusieurs utilisateurs automatiquement.',
+	'USER_NO_BANNED'			=> 'Aucun nom d’utilisateur banni',
+	'USER_UNBAN'				=> 'Débannir ou ne plus exclure des noms d’utilisateurs',
+	'USER_UNBAN_EXPLAIN'		=> 'Vous pouvez débannir (ou ne plus exclure) plusieurs noms d’utilisateurs d’un coup, en utilisant la combinaison de touches appropriée avec votre clavier et votre souris. Les noms d’utilisateurs exclus sont grisés et en gras.',
+	
+
 ));
 
 ?>

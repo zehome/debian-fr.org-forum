@@ -1,28 +1,14 @@
 <?php
-/**
-* This file is part of French (Formal Honorifics) phpBB Translation.
-* Copyright (C) 2010 phpBB.fr
+/** 
 *
-* This program is free software; you can redistribute it and/or modify
-* it under the terms of the GNU General Public License as published by
-* the Free Software Foundation; version 2 of the License.
+* acp_prune [Standard french]
+* translated originally by PhpBB-fr.com <http://www.phpbb-fr.com/> and phpBB.biz <http://www.phpBB.biz>
 *
-* This program is distributed in the hope that it will be useful,
-* but WITHOUT ANY WARRANTY; without even the implied warranty of
-* MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
-* GNU General Public License for more details.
+* @package language
+* @version $Id$
+* @copyright (c) 2005 phpBB Group 
+* @license http://opensource.org/licenses/gpl-license.php GNU Public License 
 *
-* You should have received a copy of the GNU General Public License along
-* with this program; if not, write to the Free Software Foundation, Inc.,
-* 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
-*
-* acp_prune [French (Formal Honorifics)]
-*
-* @package   language
-* @author    Maël Soucaze <maelsoucaze@phpbb.fr> (Maël Soucaze) http://www.phpbb.fr/
-* @copyright 2005 phpBB Group
-* @license   http://www.gnu.org/licenses/gpl-2.0.txt GNU General Public License
-* @version   $Id: prune.php 9933 2009-08-06 09:12:21Z marshalrusty $
 */
 
 /**
@@ -50,57 +36,59 @@ if (empty($lang) || !is_array($lang))
 // equally where a string contains only two placeholders which are used to wrap text
 // in a url you again do not need to specify an order e.g., 'Click %sHERE%s' is fine
 
+
 // User pruning
 $lang = array_merge($lang, array(
-	'ACP_PRUNE_USERS_EXPLAIN'	=> 'Cette section vous autorise à supprimer ou à désactiver des utilisateurs sur votre forum. Les comptes peuvent être filtrés de différentes manières ; par le nombre de messages, l’activité la plus récente, etc. Des critères peuvent être combinés afin de restreindre les comptes qui sont affectés. Par exemple, vous pouvez délester les utilisateurs qui ont moins de 10 messages et qui sont également inactifs depuis le 01-01-2002. Alternativement, vous pouvez ignorer complètement la sélection de critères en saisissant directement une liste d’utilisateurs dans le champ de texte, chacun sur une ligne séparée. Soyez prudent avec cette fonctionnalité ! Une fois qu’un utilisateur a été supprimé, vous ne pourrez pas revenir en arrière.',
-
-	'DEACTIVATE_DELETE'			=> 'Désactiver ou supprimer',
-	'DEACTIVATE_DELETE_EXPLAIN'	=> 'Choisissez entre désactiver les utilisateurs ou les supprimer entièrement. Veuillez noter que les utilisateurs supprimés ne peuvent pas être restaurés !',
-	'DELETE_USERS'				=> 'Supprimer',
-	'DELETE_USER_POSTS'			=> 'Supprimer les messages des utilisateurs délestés',
-	'DELETE_USER_POSTS_EXPLAIN' => 'Supprime les messages des utilisateurs délestés. Cela n’a aucun effet si les utilisateurs sont désactivés.',
-
-	'JOINED_EXPLAIN'			=> 'Saisissez une date au format <kbd>AAAA-MM-JJ</kbd>.',
-
-	'LAST_ACTIVE_EXPLAIN'		=> 'Saisissez une date au format <kbd>AAAA-MM-JJ</kbd>. Saisissez <kbd>0000-00-00</kbd> afin de délester les utilisateurs qui ne se sont jamais connectés, les conditions <em>Avant</em> et <em>Après</em> seront ignorées.',
-
-	'PRUNE_USERS_LIST'				=> 'Utilisateurs à délester',
-	'PRUNE_USERS_LIST_DELETE'		=> 'En accord au critère que vous avez sélectionné concernant le délestage des utilisateurs, les comptes suivants seront supprimés.',
-	'PRUNE_USERS_LIST_DEACTIVATE'	=> 'En accord au critère que vous avez sélectionné concernant le délestage des utilisateurs, les comptes suivants seront désactivés.',
-
-	'SELECT_USERS_EXPLAIN'		=> 'Veuillez saisir ici des noms d’utilisateurs spécifiques. Ils seront utilisés de préférence en tenant compte des critères présents ci-dessus. Les fondateurs ne peuvent pas être délestés.',
-
-	'USER_DEACTIVATE_SUCCESS'	=> 'Les utilisateurs que vous avez sélectionné ont été désactivés avec succès.',
-	'USER_DELETE_SUCCESS'		=> 'Les utilisateurs que vous avez sélectionné ont été supprimés avec succès.',
-	'USER_PRUNE_FAILURE'		=> 'Aucun utilisateur ne correspond au critère sélectionné.',
-
-	'WRONG_ACTIVE_JOINED_DATE'	=> 'La date que vous avez spécifié est incorrecte, elle doit obligatoirement être au format <kbd>AAAA-MM-JJ</kbd>.',
+	'ACP_PRUNE_USERS_EXPLAIN'	=> 'Cette section vous permet de supprimer ou désactiver des utilisateurs de votre forum. Les comptes peuvent être filtrés selon différents critères: par nombre de message, la plus récente activité, etc. Les critères peuvent être combinés de manière à limiter le nombre de comptes qui seront affectés. Par exemple, vous pouvez supprimer les utilisateurs avec moins de 10 messages, et qui sont également inactifs depuis le 01-01-2002. Autrement, Vous pouvez passer complètement la sélection de critères, en entrant une liste d’utilisateurs (chaque utilisateur sur une ligne différente) dans la zone de texte. Soyez vigilant avec cette fonctionnalité! Une fois qu’un utilisateur est supprimé il n’y a aucun moyen de revenir en arrière.',
+	
+	'DEACTIVATE_DELETE'  		=> 'Désactiver ou supprimer',
+	'DEACTIVATE_DELETE_EXPLAIN' => 'Choisissez ici de désactiver des utilisateurs ou de les supprimer définitivement. Notez que la suppression d’utilisateurs est irréversible.',
+	'DELETE_USERS'   			=> 'Supprimer',
+	'DELETE_USER_POSTS'   		=> 'Supprimer les messages des utilisateurs délestés',
+	'DELETE_USER_POSTS_EXPLAIN' => 'Supprime les messages des utilisateurs délestés, n’a aucun effet sur les utilisateurs désactivés.',
+	
+	'JOINED_EXPLAIN'   			=> 'Entrez une date au format <kbd>AAAA-MM-JJ</kbd>.',
+	
+	'LAST_ACTIVE_EXPLAIN'   	=> 'Entrez une date au format <kbd>AAAA-MM-JJ</kbd>. Indiquez <kbd>0000-00-00</kbd> pour supprimer les utilisateurs qui ne se sont jamais connectés, les conditions <em>Avant</em> and <em>Aprés</em> seront ignorées.',
+	
+	'PRUNE_USERS_LIST'  			=> 'Utilisateurs à délester',
+	'PRUNE_USERS_LIST_DELETE'   	=> 'Les comptes utilisateurs répondants aux critères ci-dessous seront supprimés.',
+	'PRUNE_USERS_LIST_DEACTIVATE'   => 'Les comptes utilisateurs répondants aux critères ci-dessous seront désactivés.',
+	
+	'SELECT_USERS_EXPLAIN'   	=> 'Entrez ici des noms d’utilisateurs, ils seront utilisés sans tenir compte des critères précédents. Les fondateurs ne peuvent pas être supprimés.',
+	
+	'USER_DEACTIVATE_SUCCESS'   => 'Les utilisateurs sélectionnés ont été désactivés.',
+	'USER_DELETE_SUCCESS'   	=> 'Les utilisateurs sélectionnés ont été supprimés.',
+	'USER_PRUNE_FAILURE'   		=> 'Aucun utilisateur ne répond aux critères.',
+	
+	'WRONG_ACTIVE_JOINED_DATE'  => 'La date est incorrecte. Elle doit être au format <kbd>AAAA-MM-JJ</kbd>.',
+	
 ));
 
 // Forum Pruning
-$lang = array_merge($lang, array(
-	'ACP_PRUNE_FORUMS_EXPLAIN'	=> 'Ceci supprimera tous les sujets qui n’ont obtenus aucune réponse ou qui n’ont pas été consultés depuis un certain nombre de jours. Si vous ne saisissez aucun numéro, tous les sujets seront alors supprimés. Par défaut, les sujets dont un sondage est en cours, les notes et les annonces ne seront pas supprimés.',
+$lang = array_merge($lang, array(	
+	'ACP_PRUNE_FORUMS_EXPLAIN'	=> 'Ceci supprimera les sujets n’ayant pas reçu de réponse ou n’ayant pas été visualisés depuis le nombre de jours que vous avez indiqué. Si vous n’indiquez pas un nombre de jours, tous les sujets seront supprimés. Par défaut, cette action ne supprimera pas les sujets ayant des sondages actifs, ni les post-it et annonces.',
 
-	'FORUM_PRUNE'		=> 'Délester le forum',
-
-	'NO_PRUNE'			=> 'Aucun forum n’a été délesté.',
-
-	'SELECTED_FORUM'	=> 'Forum sélectionné',
-	'SELECTED_FORUMS'	=> 'Forums sélectionnés',
-
+	'FORUM_PRUNE'		=> 'Délestage',
+	
+	'NO_PRUNE'   		=> 'Pas de forums délestés.',
+	
+	'SELECTED_FORUM'  	=> 'Forum sélectionné',
+	'SELECTED_FORUMS'   => 'Forums sélectionnés',
+	
 	'POSTS_PRUNED'					=> 'Messages délestés',
-	'PRUNE_ANNOUNCEMENTS'			=> 'Délester les annonces',
-	'PRUNE_FINISHED_POLLS'			=> 'Délester les sondages terminés',
-	'PRUNE_FINISHED_POLLS_EXPLAIN'	=> 'Supprime les sujets dans lesquels les sondages sont terminés.',
-	'PRUNE_FORUM_CONFIRM'			=> 'Êtes-vous sûr de vouloir délester les forums sélectionnés avec les réglages que vous avez spécifié ? Une fois supprimés, les messages et les sujets délestés ne pourront pas être restaurés.',
-	'PRUNE_NOT_POSTED'				=> 'Nombre de jours depuis la dernière publication',
-	'PRUNE_NOT_VIEWED'				=> 'Nombre de jours depuis la dernière consultation',
-	'PRUNE_OLD_POLLS'				=> 'Délester les anciens sondages',
-	'PRUNE_OLD_POLLS_EXPLAIN'		=> 'Supprime les sujets dans lesquels les sondages en cours ne contiennent aucun vote.',
-	'PRUNE_STICKY'					=> 'Délester les notes',
-	'PRUNE_SUCCESS'					=> 'Le délestage des forums a été effectué avec succès.',
-
-	'TOPICS_PRUNED'		=> 'Sujets délestés',
+	'PRUNE_ANNOUNCEMENTS'   		=> 'Délester les annonces',
+	'PRUNE_FINISHED_POLLS' 			=> 'Délester les sondages expirés',
+	'PRUNE_FINISHED_POLLS_EXPLAIN'  => 'Supprimer les sujets avec un sondage expiré.',
+	'PRUNE_FORUM_CONFIRM'   		=> 'Êtes-vous sûr de vouloir délester les forums sélectionnés selon les critères ci-dessous? Une fois supprimés, il n’y a aucun moyen de récupérer les sujets et les messages.',
+	'PRUNE_NOT_POSTED'   			=> 'Nombre de jours depuis le dernier message posté',
+	'PRUNE_NOT_VIEWED'   			=> 'Nombre de jours depuis la dernière visualisation du sujet',
+	'PRUNE_OLD_POLLS'   			=> 'Délester les anciens sondages',
+	'PRUNE_OLD_POLLS_EXPLAIN'  		=> 'Supprimer les sujets contenant des sondages sans vote depuis le nombre de jours sélectionné.',
+	'PRUNE_STICKY'   				=> 'Délester les post-it',
+	'PRUNE_SUCCESS'   				=> 'Le délestage des forums a été effectué.',
+	
+	'TOPICS_PRUNED'   				=> 'Sujets délestés',
 ));
 
 ?>

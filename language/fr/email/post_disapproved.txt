@@ -1,12 +1,11 @@
-Subject: Message désapprouvé - "{POST_SUBJECT}"
+Subject: Message refusé - {POST_SUBJECT}
 
 Bonjour {USERNAME},
 
-Vous recevez cet avertissement car votre message "{POST_SUBJECT}" sur "{SITENAME}" a été désapprouvé par un modérateur ou un administrateur.
+Vous recevez cet e-mail car votre message "{POST_SUBJECT}" sur "{SITENAME}" a été refusé par un modérateur ou un administrateur.
 
-Les raisons suivantes ont été prononcées concernant la désapprobation :
+Il l'a été pour la raison suivante:
 
 {REASON}
-
 
 {EMAIL_SIG}

@@ -1,17 +1,17 @@
-Subject: Bienvenue sur "{SITENAME}"
+Subject: Bienvenue sur les forums de "{SITENAME}"
 
 {WELCOME_MSG}
 
-Veuillez conserver cet e-mail dans vos archives. Les informations concernant votre compte sont les suivantes :
+Vous êtes prié de conserver cet e-mail dans vos archives. Voici les informations concernant votre compte:
 
 ----------------------------
-Nom d'utilisateur : {USERNAME}
+Nom d'utilisateur: {USERNAME}
 
-Lien du forum : {U_BOARD}
+Adresse du forum: {U_BOARD}
 ----------------------------
 
-Votre mot de passe a été stocké en toute sécurité dans notre base de données et ne pourra pas être retrouvé. Dans le cas où vous l'oubliez, vous pourrez le réinitialiser en utilisant l'adresse e-mail associée à votre compte.
+Votre mot de passe a été stocké de manière sécurisée dans notre base de données et ne pourra pas être retrouvé. Dans le cas où vous l'auriez oublié, vous pourrez le réinitialiser en utilisant l'adresse e-mail associée à votre compte.
 
-Nous vous remercions de votre inscription.
+Merci de vous être enregistré.
 
 {EMAIL_SIG}

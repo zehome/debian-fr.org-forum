@@ -1,28 +1,14 @@
 <?php
-/**
-* This file is part of French (Formal Honorifics) phpBB Translation.
-* Copyright (C) 2010 phpBB.fr
+/** 
 *
-* This program is free software; you can redistribute it and/or modify
-* it under the terms of the GNU General Public License as published by
-* the Free Software Foundation; version 2 of the License.
+* viewforum [Standard french]
+* translated originally by PhpBB-fr.com <http://www.phpbb-fr.com/> and phpBB.biz <http://www.phpBB.biz>
 *
-* This program is distributed in the hope that it will be useful,
-* but WITHOUT ANY WARRANTY; without even the implied warranty of
-* MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
-* GNU General Public License for more details.
+* @package language
+* @version $Id$
+* @copyright (c) 2005 phpBB Group 
+* @license http://opensource.org/licenses/gpl-license.php GNU Public License 
 *
-* You should have received a copy of the GNU General Public License along
-* with this program; if not, write to the Free Software Foundation, Inc.,
-* 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
-*
-* viewforum [French (Formal Honorifics)]
-*
-* @package   language
-* @author    Maël Soucaze <maelsoucaze@phpbb.fr> (Maël Soucaze) http://www.phpbb.fr/
-* @copyright 2005 phpBB Group
-* @license   http://www.gnu.org/licenses/gpl-2.0.txt GNU General Public License
-* @version   $Id: viewforum.php 8479 2008-03-29 00:22:48Z naderman $
 */
 
 /**
@@ -35,7 +21,7 @@ if (!defined('IN_PHPBB'))
 
 if (empty($lang) || !is_array($lang))
 {
-	$lang = array();
+   $lang = array();
 }
 
 // DEVELOPERS PLEASE NOTE
@@ -57,21 +43,26 @@ $lang = array_merge($lang, array(
 	'FORUM_PERMISSIONS'		=> 'Permissions du forum',
 
 	'ICON_ANNOUNCEMENT'		=> 'Annonce',
-	'ICON_STICKY'			=> 'Note',
+	'ICON_STICKY'			=> 'Post-it',
 
-	'LOGIN_NOTIFY_FORUM'	=> 'Vous avez été averti à partir de ce forum, veuillez vous connecter afin de le consulter.',
+	'LOGIN_NOTIFY_FORUM'	=> 'Vous avez été averti de la présence d’un nouveau message dans ce forum, connectez-vous pour y accéder.',
 
-	'MARK_TOPICS_READ'		=> 'Marquer les sujets comme lus',
+	'MARK_TOPICS_READ'		=> 'Marquer tous les sujets comme lus',
 
-	'NEW_POSTS_HOT'			=> 'Nouveaux messages [ Populaires ]',
-	'NEW_POSTS_LOCKED'		=> 'Nouveaux messages [ Verrouillés ]',
-	'NO_NEW_POSTS_HOT'		=> 'Aucun nouveau message [ Populaire ]',
-	'NO_NEW_POSTS_LOCKED'	=> 'Aucun nouveau message [ Verrouillé ]',
-	'NO_READ_ACCESS'		=> 'Vous n’avez pas les permissions appropriées afin de lire les sujets de ce forum.',
+	'NEW_POSTS_HOT'			=> 'Nouveaux messages [ Populaires ]',	// Not used anymore
+	'NEW_POSTS_LOCKED'		=> 'Nouveaux messages [ Verrouillés ]',	// Not used anymore
+	'NO_NEW_POSTS_HOT'		=> 'Pas de nouveaux messages [ Populaires ]',	// Not used anymore
+	'NO_NEW_POSTS_LOCKED'	=> 'Pas de nouveaux messages [ Verrouillés ]',	// Not used anymore
+	'NO_READ_ACCESS'		=> 'Vous n’avez pas les permissions requises pour lire les sujets de ce forum.',
+	'NO_UNREAD_POSTS_HOT'		=> 'Pas de messages non lus [ Populaires ]',
+	'NO_UNREAD_POSTS_LOCKED'	=> 'Pas de messages non lus [ Verrouillés ]',
 
 	'POST_FORUM_LOCKED'		=> 'Le forum est verrouillé',
 
-	'TOPICS_MARKED'			=> 'Les sujets de ce forum sont à présent marqués comme lus.',
+	'TOPICS_MARKED'			=> 'Les sujets de ce forum ont été marqués comme lus.',
+
+	'UNREAD_POSTS_HOT'		=> 'Messages non lus [ Populaires ]',
+	'UNREAD_POSTS_LOCKED'	=> 'Messages non lus [ Verrouillés ]',
 
 	'VIEW_FORUM'			=> 'Voir le forum',
 	'VIEW_FORUM_TOPIC'		=> '1 sujet',

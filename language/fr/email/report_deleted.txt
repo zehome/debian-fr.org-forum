@@ -1,8 +1,7 @@
-Subject: Rapport supprimé - "{POST_SUBJECT}"
+Subject: Suppression du rapport - {POST_SUBJECT}
 
 Bonjour {USERNAME},
 
-Vous recevez cet avertissement car le rapport du message "{POST_SUBJECT}" dans "{TOPIC_TITLE}" sur "{SITENAME}" a été supprimé par un modérateur ou un administrateur.
-
+Vous recevez cet e-mail car le rapport que vous avez fait sur le message "{POST_SUBJECT}" du sujet "{TOPIC_TITLE}" de "{SITENAME}" a été supprimé par un modérateur ou un administrateur.
 
 {EMAIL_SIG}

@@ -1,9 +1,9 @@
-Subject: Demande à rejoindre votre groupe
+Subject: Une demande pour rejoindre votre groupe a été formulée
 
 Cher {USERNAME},
 
-L'utilisateur "{REQUEST_USERNAME}" a demandé à rejoindre le groupe "{GROUP_NAME}" que vous modérez sur "{SITENAME}".
-Veuillez vous rendre sur le lien suivant afin d'approuver ou de refuser cette demande d'adhésion au groupe :
+L’utilisateur "{REQUEST_USERNAME}" demande à adhérer au groupe "{GROUP_NAME}" que vous modérez sur "{SITENAME}".
+Pour approuver/désapprouver cette demande pour l'adhésion au groupe, cliquez sur le lien suivant:
 
 {U_PENDING}
 

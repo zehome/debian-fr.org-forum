@@ -1,8 +1,7 @@
-Subject: Rapport fermé - "{POST_SUBJECT}"
+Subject: Fermeture de rapport - {POST_SUBJECT}
 
 Bonjour {USERNAME},
 
-Vous recevez cet avertissement car le rapport que vous avez rempli sur le message "{POST_SUBJECT}" dans "{TOPIC_TITLE}" sur "{SITENAME}" a été vérifié par un modérateur ou un administrateur. Le rapport a alors été fermé. Si vous souhaitez avoir plus d'informations à ce sujet, veuillez contacter {CLOSER_NAME} par message privé.
-
+Vous recevez cet e-mail car le rapport que vous avez fait sur le message "{POST_SUBJECT}" du sujet "{TOPIC_TITLE}" de "{SITENAME}" a été vu par un modérateur ou un administrateur. Ce rapport est dorénavant classé. Si vous avez des questions, envoyez un message privé à {CLOSER_NAME}.
 
 {EMAIL_SIG}

@@ -1,28 +1,14 @@
 <?php
 /**
-* This file is part of French (Formal Honorifics) phpBB Translation.
-* Copyright (C) 2010 phpBB.fr
 *
-* This program is free software; you can redistribute it and/or modify
-* it under the terms of the GNU General Public License as published by
-* the Free Software Foundation; version 2 of the License.
+* captcha_qa [Standard french]
+* translated by PhpBB-fr.com <http://www.phpbb-fr.com/>
 *
-* This program is distributed in the hope that it will be useful,
-* but WITHOUT ANY WARRANTY; without even the implied warranty of
-* MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
-* GNU General Public License for more details.
+* @package language
+* @version $Id$
+* @copyright (c) 2009 phpBB Group
+* @license http://opensource.org/licenses/gpl-license.php GNU Public License
 *
-* You should have received a copy of the GNU General Public License along
-* with this program; if not, write to the Free Software Foundation, Inc.,
-* 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
-*
-* captcha_qa [French (Formal Honorifics)]
-*
-* @package   language
-* @author    Maël Soucaze <maelsoucaze@phpbb.fr> (Maël Soucaze) http://www.phpbb.fr/
-* @copyright 2009 phpBB Group
-* @license   http://www.gnu.org/licenses/gpl-2.0.txt GNU General Public License
-* @version   $Id: captcha_qa.php 10450 2010-01-26 10:57:00Z Kellanved $
 */
 
 /**
@@ -51,30 +37,29 @@ if (empty($lang) || !is_array($lang))
 // in a url you again do not need to specify an order e.g., 'Click %sHERE%s' is fine
 
 $lang = array_merge($lang, array(
-	'CAPTCHA_QA'				=> 'Q&amp;R du CAPTCHA',
-	'CONFIRM_QUESTION_EXPLAIN'	=> 'Cette question est un moyen d’identification et de prévention contre les actions automatisées.',
-	'CONFIRM_QUESTION_WRONG'	=> 'Vous n’avez pas répondu correctement à la question de confirmation.',
+	'CAPTCHA_QA'				=> 'Q&amp;A',
+	'CONFIRM_QUESTION_EXPLAIN'	=> 'Cette question est un moyen d’empêcher des soumissions automatisées de formulaires par des robots.',
+	'CONFIRM_QUESTION_WRONG'	=> 'Vous avez fourni une réponse invalide à la question.',
 
 	'QUESTION_ANSWERS'			=> 'Réponses',
-	'ANSWERS_EXPLAIN'			=> 'Veuillez répondre correctement à la question. Chaque réponse doit être saisie sur une nouvelle ligne.',
+	'ANSWERS_EXPLAIN'			=> 'Entrez des réponses valides à la question, une par ligne.',
 	'CONFIRM_QUESTION'			=> 'Question',
 
 	'ANSWER'					=> 'Réponse',
-	'EDIT_QUESTION'				=> 'Modifier la question',
+	'EDIT_QUESTION'				=> 'Editer la question',
 	'QUESTIONS'					=> 'Questions',
-	'QUESTIONS_EXPLAIN'			=> 'Durant leur inscription, les utilisateurs devront répondre à une des questions spécifiées ici. Pour utiliser ce plugin, vous devez régler au moins une question dans la langue par défaut. Nous vous recommandons de cibler ces questions selon votre audience afin que les réponses soient plus faciles à trouver pour vos utilisateurs qu’aux robots capables d’exécuter des recherches sur Google™, qui devraient rencontrer plus de difficultés. L’utilisation et la mise à jour régulière d’un grand nombre de questions fournira de meilleurs résultats. Activez la vérification stricte si votre question demande une ou des réponses contenant des signes de ponctuation ou des majuscules.',
+	'QUESTIONS_EXPLAIN'			=> 'Pour chaque soumission d’un formulaire où vous avez activé le plugin Q&amp;A, les utilisateurs seront invités à répondre à une des questions indiquées ici. Pour utiliser ce plugin, au moins une question doit être définie dans la langue par défaut. Il devrait être simple pour votre public cible de répondre à ces questions, mais au-delà de la capacité d’un robot à lancer une recherche Google™. En utilisant un large jeu de questions modifiées régulièrement, vous obtiendrez de meilleurs résultats. Activez le contrôle strict si votre question doit prendre en compte la casse des caractères, la ponctuation ou les espaces.',
 	'QUESTION_DELETED'			=> 'Question supprimée',
 	'QUESTION_LANG'				=> 'Langue',
-	'QUESTION_LANG_EXPLAIN'		=> 'La langue dans laquelle cette question et ses réponses sont rédigées.',
-	'QUESTION_STRICT'			=> 'Vérification stricte',
-	'QUESTION_STRICT_EXPLAIN'	=> 'Si activée, les majuscules et les espaces seront également pris en compte.',
+	'QUESTION_LANG_EXPLAIN'		=> 'La langue dans laquelle la question et sa réponse ont été écrites.',
+	'QUESTION_STRICT'			=> 'Contrôle strict',
+	'QUESTION_STRICT_EXPLAIN'	=> 'Si activé, la casse des caractères, la ponctuation et les espaces seront pris en compte.',
 
 	'QUESTION_TEXT'				=> 'Question',
-	'QUESTION_TEXT_EXPLAIN'		=> 'La question qui sera demandée lors des inscriptions.',
+	'QUESTION_TEXT_EXPLAIN'		=> 'La question présentée à l’utilisateur.',
 
-	'QA_ERROR_MSG'				=> 'Veuillez remplir tous les champs et saisir au moins une réponse.',
-	'QA_LAST_QUESTION'			=> 'Vous ne pouvez pas supprimer toutes les questions lorsque le plugin est actif.',
-
+	'QA_ERROR_MSG'				=> 'Complétez tous les champs et écrivez au moins une réponse.',
+	'QA_LAST_QUESTION'			=> 'Vous ne pouvez pas supprimer toutes les questions tant que le plugin est actif.',
 ));
 
 ?>
