@@ -51,7 +51,7 @@ RewriteRule ^([a-z0-9_-]*)/?(sujet|[a-z0-9_-]*-t)([0-9]+)(-([0-9]+))?\.html$ /vi
 # PHPBB FILES ALL MODES
 RewriteRule ^ressources/[a-z0-9_-]+/(thumb/)?([0-9]+)$ /download/file.php?id=$2&t=$1 [QSA,L,NC]
 # PROFILES ALL MODES WITH ID
-RewriteRule ^(membre|[a-z0-9_-]*-u)([0-9]+)/$ /memberlist.php?mode=viewprofile&u=$2 [QSA,L,NC]
+RewriteRule ^(membre|[a-z0-9_-]*-u)([0-9]+)/?$ /memberlist.php?mode=viewprofile&u=$2 [QSA,L,NC]
 # USER MESSAGES ALL MODES WITH ID
 RewriteRule ^(membre|[a-z0-9_-]*-u)([0-9]+)/(topics|posts)/?(page([0-9]+)\.html)?$ /search.php?author_id=$2&sr=$3&start=$5 [QSA,L,NC]
 # GROUPS ALL MODES
