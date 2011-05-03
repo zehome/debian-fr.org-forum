@@ -4059,6 +4059,7 @@ function obtain_users_online_string($online_users, $item_id = 0, $item = 'forum'
 		$sql = 'SELECT username, username_clean, user_id, user_type, user_allow_viewonline, user_colour
 				FROM ' . USERS_TABLE . '
 				WHERE ' . $db->sql_in_set('user_id', $online_users['online_users']) . '
+        AND group_id NOT IN (SELECT group_id FROM ' . GROUPS_TABLE . ' WHERE group_name = \'BOTS\')
 				ORDER BY username_clean ASC';
 		$result = $db->sql_query($sql);
 
