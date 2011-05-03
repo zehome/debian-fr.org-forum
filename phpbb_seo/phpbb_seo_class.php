@@ -30,7 +30,7 @@ class phpbb_seo extends setup_phpbb_seo {
 			'search' => array('st' => 0, 'sk' => 't', 'sd' => 'd', 'ch' => ''),
 		);
 	var	$seo_stop_files = array('posting' => 1, 'faq' => 1, 'ucp' => 1, 'swatch' => 1, 'mcp' => 1, 'style' => 1, 'cron' => 1);
-	var	$seo_stop_vars = array('view=', 'mark=', 'watch=', 'hash=');
+	var	$seo_stop_vars = array('ns=', 'ys=', 'view=', 'mark=', 'watch=', 'hash=');
 	var	$seo_stop_dirs = array();
 	var	$seo_delim = array( 'forum' => '-f', 'topic' => '-t', 'user' => '-u', 'group' => '-g', 'start' => '-', 'sr' => '-', 'file' => '/');
 	var	$seo_ext = array( 'forum' => '.html', 'topic' => '.html', 'post' => '.html', 'user' => '.html', 'group' => '.html',  'index' => '', 'global_announce' => '/', 'leaders' => '.html', 'atopic' => '.html', 'utopic' => '.html', 'npost' => '.html', 'urpost' => '.html', 'pagination' => '.html', 'gz_ext' => '');
