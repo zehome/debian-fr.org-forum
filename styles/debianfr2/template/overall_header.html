@@ -238,7 +238,7 @@ function marklist(id, name, state)
 <div id="wrapheader">
 
     <div id="logodesc">
-    <h1><a href="http://www.debian-fr.org/" title="Forum debian-fr.org">Forum debian-fr.org</a></h1>
+    <h1><a href="https://www.debian-fr.org/" title="Forum debian-fr.org">Forum debian-fr.org</a></h1>
     <!-- INCLUDE searchbox.html -->
 <!--    <form id="header_search">
       <input type="hidden" value="search" name="do" />
@@ -248,12 +248,15 @@ function marklist(id, name, state)
 -->
     <div>
       <p>
-        <!-- IF not S_IS_BOT --><a href="{U_LOGIN_LOGOUT}"><img src="{T_THEME_PATH}/images/icon_mini_login.gif" width="12" height="13" alt="*" /> {L_LOGIN_LOGOUT}</a>&nbsp;<!-- ENDIF -->
+        <!-- IF not S_IS_BOT -->
+        <!-- IF not S_USER_LOGGED_IN --><a href="https://www.debian-fr.org/ucp.php?mode=login">
+        <!-- ELSE --><a href="{U_LOGIN_LOGOUT}">
+        <!-- ENDIF --><img src="{T_THEME_PATH}/images/icon_mini_login.gif" width="12" height="13" alt="*" /> {L_LOGIN_LOGOUT}</a>&nbsp;<!-- ENDIF -->
         <!-- IF U_RESTORE_PERMISSIONS --> &nbsp;<a href="{U_RESTORE_PERMISSIONS}"><img src="{T_THEME_PATH}/images/icon_mini_login.gif" width="12" height="13" alt="*" /> {L_RESTORE_PERMISSIONS}</a><!-- ENDIF -->
         <!-- IF not S_IS_BOT -->
           <!-- IF S_USER_LOGGED_IN -->
             <!-- IF S_DISPLAY_PM --> &nbsp;<a href="{U_PRIVATEMSGS}"><img src="{T_THEME_PATH}/images/icon_mini_message.gif" width="12" height="13" alt="*" /> {PRIVATE_MESSAGE_INFO}<!-- IF PRIVATE_MESSAGE_INFO_UNREAD -->, {PRIVATE_MESSAGE_INFO_UNREAD}<!-- ENDIF --></a><!-- ENDIF -->
-          <!-- ELSE --> &nbsp;<a href="{U_REGISTER}"><img src="{T_THEME_PATH}/images/icon_mini_register.gif" width="12" height="13" alt="*" /> {L_REGISTER}</a>
+          <!-- ELSE --> &nbsp;<a href="https://www.debian-fr.org/ucp.php?mode=register"><img src="{T_THEME_PATH}/images/icon_mini_register.gif" width="12" height="13" alt="*" /> {L_REGISTER}</a>
           <!-- ENDIF -->
         <!-- ENDIF -->
       </p>
