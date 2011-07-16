@@ -911,7 +911,7 @@ class diff3_op
 			// Try to solve $Id$ issues. ;)
 			if (sizeof($this->orig) == 1 && sizeof($this->final1) == 1 && sizeof($this->final2) == 1)
 			{
-				$match = '#^' . preg_quote('* @version $Id$#';
+				$match = '#^' . preg_quote('* @version $Id: ', '#') . '[a-z\._\- ]+[0-9]+ [0-9]{4}-[0-9]{2}-[0-9]{2} [0-9\:Z]+ [a-z0-9_\- ]+\$$#';
 
 				if (preg_match($match, $this->orig[0]) && preg_match($match, $this->final1[0]) && preg_match($match, $this->final2[0]))
 				{

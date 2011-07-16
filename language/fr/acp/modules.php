@@ -43,7 +43,7 @@ $lang = array_merge($lang, array(
 	'ADD_MODULE_TITLE'				=> 'Ajouter un module',
 
 	'CANNOT_REMOVE_MODULE'	=> 'Impossible de supprimer le module parent. Supprimez ou déplacer les modules enfants avant de tenter cette action.',
-	'CATEGORY'				=> 'Categorie',
+	'CATEGORY'				=> 'Catégorie',
 	'CHOOSE_MODE'			=> 'Choisissez un mode de module',
 	'CHOOSE_MODE_EXPLAIN'	=> 'Indiquez le mode qui doit être utilisé.',
 	'CHOOSE_MODULE'			=> 'Choisissez un module',

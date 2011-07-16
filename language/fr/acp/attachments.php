@@ -63,6 +63,7 @@ $lang = array_merge($lang, array(
 	'ATTACH_MAX_PM_FILESIZE_EXPLAIN' 	=> 'Taille maximale de chaque fichier joint à un message privé, mettre “0” pour illimité.',
 	'ATTACH_ORPHAN_URL'					=> 'Fichiers orphelins',
 	'ATTACH_POST_ID'					=> 'ID du message',
+	'ATTACH_POST_TYPE'          		=> 'Type du message',
 	'ATTACH_QUOTA'						=> 'Quota total de fichiers joints',
 	'ATTACH_QUOTA_EXPLAIN'				=> 'Espace disque maximum disponible pour les fichiers joints de tout le forum, mettre “0” pour illimité.',
 	'ATTACH_TO_POST'					=> 'Joindre le fichier au message',

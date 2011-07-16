@@ -88,18 +88,30 @@ class setup_phpbb_seo {
 		// Can be overridden, requires .htaccess update <=
 		// Example :
 		// 	$this->seo_ext['topic'] = '/'; // instead of the default ".html"
-//- var $seo_static = array( 'forum' => 'forum', 'topic' => 'sujet', 'post' => 'message', 'user' => 'membre', 'group' => '
-//groupe', 'index' => '', 'global_announce' => 'annonces', 'leaders' => 'staff', 'atopic' => 'sujets-actifs', 'utopic' => 'unanswere
-//d', 'npost' => 'nouveauxmessages', 'urpost' => 'unreadmessages', 'pagination' => 'page', 'gz_ext' => '.gz' );
-//+ var $seo_static = array( 'forum' => 'forum', 'topic' => 'topic', 'post' => 'post', 'user' => 'member', 'group' => 'gro
-//up', 'index' => '', 'global_announce' => 'announces', 'leaders' => 'the-team', 'atopic' => 'active-topics', 'utopic' => 'unanswere
-//d', 'npost' => 'newposts', 'urpost' => 'unreadposts', 'pagination' => 'page', 'gz_ext' => '.gz' );
 
+		// ==> Forum redirect <==
+		// In case you are using forum id removing and need to edit some forum urls
+		// that where already indexed, you can keep track of them ritgh here
+		// NOTE :
+		// 	This will only allow the zero duplicate to perform the appropriate redirection
+		// 	You need the mod for this to work :
+		// 		http://www.phpbb-seo.com/en/zero-duplicate/phpbb-seo-zero-duplicate-t1220.html (en)
+		// 		http://www.phpbb-seo.com/fr/zero-duplicate/zero-duplicate-phpbb-seo-t1502.html (fr)
+		//
+		// Example :
+		//
+		// $this->forum_redirect = array(
+		// 	// 'old-url-without-id-nor-suffix' => forum_id,
+		// 	'old-forum-url' => 23,
+		// 	'another-one' => 32,
+		// 	'anoter-version-of-the-same' => 32,
+		// );
+		//
 
 		// ==> Special for lazy French, others may delete this part
 		if ( strpos($config['default_lang'], 'fr') !== false ) {
-			$this->seo_static['topic'] = 'sujet';
-			$this->seo_static['post'] = 'message';
+			//$this->seo_static['topic'] = 'sujet';
+			//$this->seo_static['post'] = 'message';
 			$this->seo_static['user'] = 'membre';
 			$this->seo_static['group'] = 'groupe';
 			$this->seo_static['global_announce'] = 'annonces';

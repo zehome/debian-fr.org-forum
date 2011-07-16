@@ -4,7 +4,7 @@
 * acp_phpbb_seo [english]
 *
 * @package Ultimate SEO URL phpBB SEO
-* @version $Id$
+* @version $Id: phpbb_seo_related_install.php 202 2009-12-20 12:04:05Z dcz $
 * @copyright (c) 2006 - 2009 www.phpbb-seo.com
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License v2
 *

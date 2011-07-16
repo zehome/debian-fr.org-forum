@@ -54,6 +54,8 @@ $lang = array_merge($lang, array(
 	'SEND_TO_USERS'			=> 'Envoyer aux utilisateurs',
 	'SEND_TO_USERS_EXPLAIN'	=> 'Entrer des noms ici écrasera tout groupe sélectionné ci-dessus. Entrez chaque nom d’utilisateur sur une ligne différente.',
 	
+	'MAIL_BANNED'      		=> 'Envoyer aux utilisateurs bannis',
+    'MAIL_BANNED_EXPLAIN'  	=> 'Si vous cochez cette case, les utilisateurs bannis recevront aussi cet e-mail de masse.',
 	'MAIL_HIGH_PRIORITY'	=> 'Haute',
 	'MAIL_LOW_PRIORITY'		=> 'Basse',
 	'MAIL_NORMAL_PRIORITY'	=> 'Normale',
