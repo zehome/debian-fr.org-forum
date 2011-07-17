@@ -110,8 +110,8 @@ class setup_phpbb_seo {
 
 		// ==> Special for lazy French, others may delete this part
 		if ( strpos($config['default_lang'], 'fr') !== false ) {
-			//$this->seo_static['topic'] = 'sujet';
-			//$this->seo_static['post'] = 'message';
+			$this->seo_static['topic'] = 'sujet';
+			$this->seo_static['post'] = 'message';
 			$this->seo_static['user'] = 'membre';
 			$this->seo_static['group'] = 'groupe';
 			$this->seo_static['global_announce'] = 'annonces';
