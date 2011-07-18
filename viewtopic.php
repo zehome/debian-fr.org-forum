@@ -1884,36 +1884,38 @@ else
 // If there are absolutely no more unread posts in this forum and unread posts shown, we can savely show the #unread link
 if ($all_marked_read)
 {
-	if ($post_unread)
-	{
-		$template->assign_vars(array(
-			'U_VIEW_UNREAD_POST'	=> '#unread',
-		));
-	}
-	else if (isset($topic_tracking_info[$topic_id]) && $topic_data['topic_last_post_time'] > $topic_tracking_info[$topic_id])
-	{
+	// LC: Useless feature, do not work with phpBB-seo
+	//if ($post_unread)
+	//{
+	//	$template->assign_vars(array(
+	//		'U_VIEW_UNREAD_POST'	=> '#unread',
+	//	));
+	//}
+	//else if (isset($topic_tracking_info[$topic_id]) && $topic_data['topic_last_post_time'] > $topic_tracking_info[$topic_id])
+	//{
 		$template->assign_vars(array(
 			'U_VIEW_UNREAD_POST'	=> append_sid("{$phpbb_root_path}viewtopic.$phpEx", "f=$forum_id&amp;t=$topic_id&amp;view=unread") . '#unread',
 		));
-	}
+	//}
 }
 else if (!$all_marked_read)
 {
 	$last_page = ((floor($start / $config['posts_per_page']) + 1) == max(ceil($total_posts / $config['posts_per_page']), 1)) ? true : false;
 
+	// LC: Useless feature, do not work with phpBB-seo
 	// What can happen is that we are at the last displayed page. If so, we also display the #unread link based in $post_unread
-	if ($last_page && $post_unread)
-	{
-		$template->assign_vars(array(
-			'U_VIEW_UNREAD_POST'	=> '#unread',
-		));
-	}
-	else if (!$last_page)
-	{
+	//if ($last_page && $post_unread)
+	//{
+	//	$template->assign_vars(array(
+	//		'U_VIEW_UNREAD_POST'	=> '#unread',
+	//	));
+	//}
+	//else if (!$last_page)
+	//{
 		$template->assign_vars(array(
 			'U_VIEW_UNREAD_POST'	=> append_sid("{$phpbb_root_path}viewtopic.$phpEx", "f=$forum_id&amp;t=$topic_id&amp;view=unread") . '#unread',
 		));
-	}
+	//}
 }
 
 // let's set up quick_reply
