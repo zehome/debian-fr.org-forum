@@ -2185,6 +2185,15 @@ function generate_pagination($base_url, $num_items, $per_page, $start_item, $add
 	);
 	// www.phpBB-SEO.com SEO TOOLKIT END
 
+  // PRERENDER MOD
+  $prerenders = "";
+  if ($next) { $prerenders = '<link rel="prerender" href="'.$next.'"/>'; }
+  $template->assign_vars( array(
+    'PRERENDER' => $prerenders,
+    'IS_PRERENDERING' => empty($prerenders) ? false : true)
+  );
+  // END PRERENDER MOD
+
 	return $page_string;
 }
 
