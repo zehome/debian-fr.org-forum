@@ -323,6 +323,13 @@ if ($mode == 'bump')
 	{
 		$meta_url = phpbb_bump_topic($forum_id, $topic_id, $post_data, $current_time);
 		meta_refresh(3, $meta_url);
+    // BEGIN PRERENDER MOD
+//    $prerenders = '<link rel="prerender" href="'.$meta_url.'"/>';
+//    $template->assign_vars( array(
+//      'PRERENDER' => $prerenders,
+//      'IS_PRERENDERING' => empty($prerenders) ? false : true)
+//    );
+    // END PRERENDER MOD
 
 		$message = $user->lang['TOPIC_BUMPED'] . '<br /><br />' . sprintf($user->lang['VIEW_MESSAGE'], '<a href="' . $meta_url . '">', '</a>');
 		$message .= '<br /><br />' . sprintf($user->lang['RETURN_FORUM'], '<a href="' . append_sid("{$phpbb_root_path}viewforum.$phpEx", 'f=' . $forum_id) . '">', '</a>');
@@ -1157,7 +1164,13 @@ if ($submit || $preview || $refresh)
 			else
 			{
 				meta_refresh(3, $redirect_url);
-
+//        // BEGIN PRERENDER MOD
+//        $prerenders = '<link rel="prerender" href="'.$redirect_url..'"/>';
+//        $template->assign_vars( array(
+//          'PRERENDER' => $prerenders,
+//          'IS_PRERENDERING' => empty($prerenders) ? false : true)
+//        );
+//        // END PRERENDER MOD
 				$message = ($mode == 'edit') ? 'POST_EDITED' : 'POST_STORED';
 				$message = $user->lang[$message] . '<br /><br />' . sprintf($user->lang['VIEW_MESSAGE'], '<a href="' . $redirect_url . '">', '</a>');
 			}
