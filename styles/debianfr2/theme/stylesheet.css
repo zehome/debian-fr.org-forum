@@ -459,23 +459,22 @@ hr {
  ------------ */
 a:link {
 	color: black;
-	text-decoration: none;
+	text-decoration: underline;
 }
 
 a:active,
 a:visited {
 	color: #515;
-	text-decoration: none;
 }
 
 a:hover {
 	color: red;
-	text-decoration: none;
 }
 
 a.forumlink {
 	color: #6D0000;
 	font-weight: bold;
+  text-decoration: none;
 }
 
 a.forumlink:hover {
@@ -502,6 +501,21 @@ th a:hover {
 	text-decoration: underline;
 }
 
+p.forumdesc a,
+p.topicdetails a,
+p.searchbar a,
+p.linkmcp a,
+p.topicauthor a,
+div#wrapfooter a,
+div#menubar a,
+div#logodesc a,
+a.topictitle,
+h1 a,
+h2 a,
+h3 a,
+h4 a {
+  text-decoration: none !important;
+}
 
 /* Form Elements
  ------------ */
@@ -653,6 +667,9 @@ input.radio {
 	font-weight: normal;
 	color: #000044;
 	background: #f1f1f1 url(/styles/debianfr2/imageset/codebg.png) repeat-x top;
+  overflow: auto;
+  max-height: 900px;
+  max-width: 1100px;
 }
 
 .codetitle {
