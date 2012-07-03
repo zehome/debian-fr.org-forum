@@ -20,7 +20,7 @@ require($phpbb_root_path . "phpbb_seo/includes/setup_phpbb_seo.$phpEx");
 * @package Ultimate SEO URL phpBB SEO
 */
 class phpbb_seo extends setup_phpbb_seo {
-	var	$version = '0.6.8';
+	var	$version = '0.7.0';
 	var	$modrtype = 2; // We set it to mixed as a default value
 	var	$seo_path = array();
 	var	$seo_url = array( 'forum' =>  array(), 'topic' =>  array(), 'user' => array(), 'username' => array(), 'group' => array(), 'file' => array() );
@@ -91,7 +91,7 @@ class phpbb_seo extends setup_phpbb_seo {
 		// so you will need to switch to ssl for your user to use cookie based session (no sid)
 		// could be done by using an https link to login form (or within the redirect after login)
 		$this->ssl['requested'] = (bool) ((isset($_SERVER['HTTPS']) && ($_SERVER['HTTPS'] === 'on' || $_SERVER['HTTPS'] === true)) || (isset($_SERVER['SERVER_PORT']) && (int) $_SERVER['SERVER_PORT'] === 443));
-		$this->ssl['forced'] = (bool) (($config['server_protocol'] === 'https//'));
+		$this->ssl['forced'] = (bool) (($config['server_protocol'] === 'https://'));
 		$this->ssl['use'] = (bool) ($this->ssl['requested'] || $this->ssl['forced']);
 		// Server Settings, rely on DB
 		$server_protocol = $this->ssl['use'] ? 'https://' : 'http://';

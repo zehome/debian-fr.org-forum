@@ -61,7 +61,7 @@ class display_posts {
 		// Do some reset
 		$topic_datas = $topic_ids = $forum_ids = $user_cache = $id_cache = $post_datas = $forum_datas = array();
 		$forum_id = $master->call['forum_id'];
-		$now = getdate(time() + $user->timezone + $user->dst - date('Z'));
+		$now = phpbb_gmgetdate(time() + $user->timezone + $user->dst);
 		// Get The Data, first forums
 		if ((!$s_global && !$master->call['single_forum']) || ($master->call['single_forum'] && empty($master->forum_datas[$master->call['forum_id']])) ) {
 			$sql_array = array(
@@ -190,9 +190,9 @@ class display_posts {
 		if (!empty($topic_datas)) {
 			$has_result = true;
 			$bbcode_filter = false;
-			if (!class_exists('bbcode')) {
+			if (!class_exists('bbcode'/*, false*/)) {
 				global $phpbb_root_path, $phpEx;
-				include_once($phpbb_root_path . 'includes/bbcode.' . $phpEx);
+				require($phpbb_root_path . 'includes/bbcode.' . $phpEx);
 			}
 			$patterns = $replaces = array();
 			if ( !empty($master->module_config['html_msg_filters']['pattern']) ) {

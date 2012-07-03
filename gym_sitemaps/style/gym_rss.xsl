@@ -68,6 +68,7 @@
 							<span class="corners-bottom"><span></span></span>
 						</div>
 					</div>
+					{NO_LANGUAGE_FILES}
 					<div class="navbar">
 						<div class="inner"><span class="corners-top"><span></span></span>
 							<ul class="linklist navlinks">
@@ -172,7 +173,7 @@
 				</div>
 			</div>
 
-<div class="copyright">Powered by <a href="http://www.phpbb.com/">phpBB</a> &#169; 2000 - 2008 phpBB Group</div>
+<div class="copyright">Powered by <a href="http://www.phpbb.com/">phpBB</a></div>
 <!--
 	We request you retain the full copyright notice below, as well as in all templates you may use,
 	including the link to www.phpbb-seo.com.

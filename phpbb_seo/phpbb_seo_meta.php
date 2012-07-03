@@ -20,7 +20,7 @@ if (!defined('IN_PHPBB')) {
 * @package phpBB SEO Dynamic Meta tags
 */
 class seo_meta {
-	var $version = '0.4.4';
+	var $version = '0.4.6';
 	var $meta = array('title' => '', 'description' => '', 'keywords' => '', 'lang' => '', 'category' => '', 'robots' => '', 'distribution' => '', 'resource-type' => '', 'copyright' => '');
 	var $meta_def = array();
 	var $filters = array('description' => 'meta_filter_txt', 'keywords' => 'make_keywords');
@@ -185,7 +185,9 @@ class seo_meta {
 	* Returns a coma separated keyword list
 	*/
 	function make_keywords($text, $decode_entities = false) {
-		static $filter = array('`&(amp;)?[^;]+;`i', '`[[:punct:]]+`', '`[0-9]+`',  '`[\s]+`');
+		// we add ’ to the num filter because it does not seems to always be cought by punct
+		// and it is widely used in languages files
+		static $filter = array('`&(amp;)?[^;]+;`i', '`[[:punct:]]+`', '`[0-9’]+`',  '`[\s]+`');
 		$keywords = '';
 		$num = 0;
 		$text = $decode_entities ? html_entity_decode(strip_tags($text), ENT_COMPAT, 'UTF-8') : strip_tags($text);

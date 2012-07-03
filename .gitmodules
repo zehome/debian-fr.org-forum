@@ -1,0 +1,3 @@
+[submodule "styles/mobile"]
+	path = styles/mobile
+	url = git@github.com:zehome/phpbbmobile-style.git
