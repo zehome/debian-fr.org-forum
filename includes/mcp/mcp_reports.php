@@ -148,6 +148,7 @@ class mcp_reports
 
 				$message = bbcode_nl2br($message);
 				$message = smiley_text($message);
+				$report['report_text'] = make_clickable(bbcode_nl2br($report['report_text']));
 
 				if ($post_info['post_attachment'] && $auth->acl_get('u_download') && $auth->acl_get('f_download', $post_info['forum_id']))
 				{
@@ -370,6 +371,7 @@ class mcp_reports
 
 				if (sizeof($report_ids))
 				{
+					// BEGIN Topic solved
 					$sql = 'SELECT  f.forum_solve_text, f.forum_solve_color, f.forum_allow_solve, t.topic_solved,t.forum_id, t.topic_id, t.topic_title, p.post_id, p.post_subject, p.post_username, p.poster_id, p.post_time, u.username, u.username_clean, u.user_colour, r.user_id as reporter_id, ru.username as reporter_name, ru.user_colour as reporter_colour, r.report_time, r.report_id
 						FROM ' . REPORTS_TABLE . ' r, ' . POSTS_TABLE . ' p, ' . TOPICS_TABLE . ' t, ' . USERS_TABLE . ' u, ' . USERS_TABLE . ' ru , ' . FORUMS_TABLE . ' f
 						WHERE ' . $db->sql_in_set('r.report_id', $report_ids) . '
@@ -380,6 +382,7 @@ class mcp_reports
 							AND ru.user_id = r.user_id
 							AND r.pm_id = 0
 						ORDER BY ' . $sort_order_sql;
+					// END Topic solved
 					$result = $db->sql_query($sql);
 
 					$report_data = $rowset = array();

@@ -5,7 +5,7 @@
 * translated originally by PhpBB-fr.com <http://www.phpbb-fr.com/> and phpBB.biz <http://www.phpBB.biz>
 *
 * @package language
-* @version $Id$
+* @version $Id: permissions.php, v1.25 2008/10/10 11:49:00 Elglobo Exp $
 * @copyright (c) 2005 phpBB Group 
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License 
 *
@@ -170,7 +170,7 @@ $lang = array_merge($lang, array(
 	'ROLE_FORUM_POLLS'			=> 'Accès standard + Sondages',
 	'ROLE_FORUM_READONLY'		=> 'Accès en lecture uniquement',
 	'ROLE_FORUM_STANDARD'		=> 'Accès standard',
-	'ROLE_FORUM_NEW_MEMBER'		=> 'Nouvel utilisateur enregistré',
+	'ROLE_FORUM_NEW_MEMBER'		=> 'Accès nouvel utilisateur enregistré',
 	'ROLE_MOD_FULL'				=> 'Super Modérateur',
 	'ROLE_MOD_QUEUE'			=> 'Modérateur suppléant',
 	'ROLE_MOD_SIMPLE'			=> 'Modérateur simple',
@@ -180,7 +180,7 @@ $lang = array_merge($lang, array(
 	'ROLE_USER_NOAVATAR'		=> 'Aucun avatar',
 	'ROLE_USER_NOPM'			=> 'Aucun message privé',
 	'ROLE_USER_STANDARD'		=> 'Fonctionnalités standards',
-	'ROLE_USER_NEW_MEMBER'		=> 'Nouvel utilisateur enregistré',
+	'ROLE_USER_NEW_MEMBER'		=> 'Fonctionnalités nouvel utilisateur enregistré',
 
 	'ROLE_DESCRIPTION_ADMIN_FORUM'			=> 'Peut accéder à la gestion et à la configuration des permissions du forum.',
 	'ROLE_DESCRIPTION_ADMIN_FULL'			=> 'A accès à toutes les fonctions administratives du forum.<br />Non recommandé.',
@@ -271,7 +271,7 @@ $lang = array_merge($lang, array(
 	'TRACE_WHO'									=> 'Qui',
 	'TRACE_TOTAL'							=> 'Total',
 
-	'USERS_NOT_ASSIGNED'			=> 'Aucun utilisateur assigné à ce modèle',
+	'USERS_NOT_ASSIGNED'			=> 'Aucun utilisateur n’est assigné à ce modèle',
 	'USER_IS_MEMBER_OF_DEFAULT'		=> 'est un membre des groupes prédéfinis suivants',
 	'USER_IS_MEMBER_OF_CUSTOM'		=> 'est un membre des groupes normaux suivants',
 

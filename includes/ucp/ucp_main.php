@@ -670,8 +670,9 @@ class ucp_main
 		if ($mode == 'subscribed')
 		{
 			$sql_array = array(
+				// BEGIN Topic solved
 				'SELECT'	=> 't.*, f.forum_name, f.forum_solve_text, f.forum_solve_color, f.forum_allow_solve',
-
+				// END Topic solved
 				'FROM'		=> array(
 					TOPICS_WATCH_TABLE	=> 'tw',
 					TOPICS_TABLE		=> 't'
@@ -690,8 +691,9 @@ class ucp_main
 		else
 		{
 			$sql_array = array(
+				// BEGIN Topic solved
 				'SELECT'	=> 't.*, f.forum_name, b.topic_id as b_topic_id, f.forum_solve_text, f.forum_solve_color, f.forum_allow_solve',
-
+				// END Topic solved
 				'FROM'		=> array(
 					BOOKMARKS_TABLE		=> 'b',
 				),

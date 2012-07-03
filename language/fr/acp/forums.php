@@ -5,7 +5,7 @@
 * translated originally by PhpBB-fr.com <http://www.phpbb-fr.com/> and phpBB.biz <http://www.phpBB.biz>
 *
 * @package language
-* @version $Id$
+* @version $Id: forums.php, v1.28 2010/02/24 15:34:00 Elglobo Exp $
 * @copyright (c) 2005 phpBB Group 
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License 
 *
@@ -39,10 +39,9 @@ if (empty($lang) || !is_array($lang))
 // Forum Admin
 $lang = array_merge($lang, array(
 	'LOCK_SOLVED' => 'Lock solved topics',
-	'LOCK_SOLVED_EXPLAIN' => 'Note that only moderators can reopen locked topics.',
-	'TOPIC_SOLVED_SETTINGS' => 'Topic solved settings',
-	'FORUM_SOLVE_TEXT_EXPLAIN' => 'You can have some text instead of the nice topic solved image. Ex [SOLVED] or [SOLD] or something else. Leave empty to use the topic solved image.',
-
+    'LOCK_SOLVED_EXPLAIN' => 'Note that only moderators can reopen locked topics.',
+    'TOPIC_SOLVED_SETTINGS' => 'Topic solved settings',
+    'FORUM_SOLVE_TEXT_EXPLAIN' => 'You can have some text instead of the nice topic solved image. Ex [SOLVED] or [SOLD] or something else. Leave empty to use the topic solved image.',
 	'AUTO_PRUNE_DAYS'			=> 'Ancienneté des messages délestés automatiquement',
 	'AUTO_PRUNE_DAYS_EXPLAIN'	=> 'Nombre de jours depuis le dernier message et la suppression du sujet.',
 	'AUTO_PRUNE_FREQ'			=> 'Fréquence du délestage automatique',
@@ -79,7 +78,7 @@ $lang = array_merge($lang, array(
 	'ENABLE_TOPIC_ICONS'			=> 'Activer les icônes des sujets',
 
 	'FORUM_ADMIN'						=> 'Administration des forums',
-	'FORUM_ADMIN_EXPLAIN'				=> 'Dans phpBB3 les catégories n’existent plus, tout est basé sur la notion de forum. Chaque forum peut contenir un nombre illimité de sous-forums et vous pouvez déterminer s’ils peuvent contenir ou non des messages (c’est-à-dire se comporter ou non comme une ancienne catégorie). Vous pouvez individuellement ajouter, modifier, supprimer, verrouiller, déverrouiller des forums et régler certains paramètres. Si des sujets et des messages se désynchronisent vous pouvez également re-synchroniser un forum. <strong>Vous devez copier ou régler les permissions appropriées pour les nouveaux forums créés, afin qu’ils soient visibles.</strong>',
+	'FORUM_ADMIN_EXPLAIN'				=> 'Dans phpBB3 tout est basé sur la notion de forum. Une catégorie est juste un type spécial de forum. Chaque forum peut contenir un nombre illimité de sous-forums et vous pouvez déterminer s’ils peuvent contenir ou non des messages (c’est-à-dire se comporter ou non comme une ancienne catégorie). Vous pouvez individuellement ajouter, modifier, supprimer, verrouiller, déverrouiller des forums et régler certains paramètres. Si des sujets et des messages se désynchronisent vous pouvez également re-synchroniser un forum. <strong>Vous devez copier ou régler les permissions appropriées pour les nouveaux forums créés, afin qu’ils soient visibles.</strong>',
 	'FORUM_AUTO_PRUNE'					=> 'Activer l’auto-délestage',
 	'FORUM_AUTO_PRUNE_EXPLAIN'			=> 'Déleste le forum des sujets, réglez les paramètres de fréquence/ancienneté ci-dessous.',
 	'FORUM_CREATED'						=> 'Le forum a été créé.',

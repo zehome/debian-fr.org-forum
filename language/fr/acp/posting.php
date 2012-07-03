@@ -5,7 +5,7 @@
 * translated originally by PhpBB-fr.com <http://www.phpbb-fr.com/> and phpBB.biz <http://www.phpBB.biz>
 *
 * @package language
-* @version $Id$
+* @version $Id: posting.php, v1.26 10:07 14/06/2011 15:51:00 Lolovoisin Exp $
 * @copyright (c) 2005 phpBB Group 
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License 
 *
@@ -205,8 +205,8 @@ $lang = array_merge($lang, array(
 
 	'WORD'				=> 'Mot',
 	'WORD_ADDED'		=> 'La censure a été ajoutée.',
-	'WORD_REMOVED'		=> 'La censure sélectionné a été supprimée.',
-	'WORD_UPDATED'		=> 'La censure sélectionné a été mise à jour.',
+	'WORD_REMOVED'		=> 'La censure sélectionnée a été supprimée.',
+	'WORD_UPDATED'		=> 'La censure sélectionnée a été mise à jour.',
 ));
 
 // Ranks
