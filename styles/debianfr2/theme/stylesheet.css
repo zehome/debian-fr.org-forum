@@ -667,9 +667,6 @@ input.radio {
 	font-weight: normal;
 	color: #000044;
 	background: #f1f1f1 url(/styles/debianfr2/imageset/codebg.png) repeat-x top;
-  overflow: auto;
-  max-height: 900px;
-  max-width: 1100px;
 }
 
 .codetitle {
@@ -686,6 +683,9 @@ input.radio {
 	background: #e1e1e1;
 	color: black;
 	font-size: 1.1em;
+	overflow: auto;
+	max-height: 900px;
+	max-width: 1100px;
 }
 
 .syntaxbg {
